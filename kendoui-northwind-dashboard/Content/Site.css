@@ -196,9 +196,10 @@ body,
     padding-bottom: 20px;    
 }
 
-    #dash-logo:hover {
-        background-color: transparent;
-    }
+.employee:hover {
+    background-color: white;
+    color: #6abd2d !important;
+}
 
 #main-section-header > h2 {
     padding-left: 1.667em;

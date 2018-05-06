@@ -41,31 +41,58 @@
 <div class="main-section-content row" style="">
     <div id="Employees-List" class="col-xs-1 column">
         <h3 style="color:white"><b>NOTIFICATIONS</b></h3>
-        <!--open nav column-->
-        <div id="EmployeesList" data-role="listview" class="k-widget k-listview k-selectable" role="listbox">
-            <div class="employee k-state-selected" role="option" aria-selected="true">
-                <div class="employee-wrapper">
-                    <dl class="employee-list-details">
-                        <dt class="name" style="color:#6abd2d"><b>Payment Request</b></dt>
-                        <dd class="title" style="color:#024578"> @System.DateTime.Now</dd>
-                    </dl>
-                </div>
-            </div>
-
-            @{
-                for (int i = 0; i < 10; i++)
-                {
-                    <div class="employee" aria-selected="false">
-                        <div class="employee-wrapper"> 
-                            <dl class="employee-list-details" >
-                                <dt class="name" style="color:white"><b>Payment Request</b></dt>
-                                <dd class="title" style="color:white">@System.DateTime.Now</dd>
-                            </dl>
-                        </div>
-                    </div>
+        <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
+            <ul class="nav">
+                @{
+                    for (int i = 0; i < 10; i++)
+                    {
+                        <li class="employee" aria-selected="false">
+                            <div class="employee-wrapper">
+                                <dl class="employee-list-details">
+                                    <dt class="name" style="color:white"><b>Payment Request</b></dt>
+                                    <dd class="title" style="color:white">@System.DateTime.Now</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    }
                 }
-            }
+                @*<li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><span class="icon fa fa-home"></span>Dashboard</a></li>
+                <li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>
+                <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
+                <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
+                <li id="CostSheets"><a href="@(Url.Action("CostSheets", "Home"))"><i class="icon fas  fa fa-file"></i>Cost Sheets</a></li>
+                <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
+                <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>*@
+            </ul>
+            @*<div id="rights">
+                    <p>Copyright &copy; 2017, Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.</p>
+                </div>*@
         </div>
+        <!--open nav column-->
+        @*<ul id="EmployeesList" data-role="listview" class="k-widget k-listview k-selectable" role="listbox">
+                @*<li class="employee k-state-selected" role="option">
+                    <div class="employee-wrapper">
+                        <dl class="employee-list-details">
+                            <dt class="name" style="color:#6abd2d"><b>Payment Request</b></dt>
+                            <dd class="title" style="color:#024578"> @System.DateTime.Now</dd>
+                        </dl>
+                    </div>
+                </li>
+
+                @{
+                    for (int i = 0; i < 10; i++)
+                    {
+                        <li class="employee" aria-selected="false">
+                            <div class="employee-wrapper">
+                                <dl class="employee-list-details" >
+                                    <dt class="name" style="color:white"><b>Payment Request</b></dt>
+                                    <dd class="title" style="color:white">@System.DateTime.Now</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>*@
     </div>
 
     <div id="employee-details-wrapper">
@@ -110,11 +137,6 @@
                     </div>
                 </div>
             </div>
-            @*<div id="employeeSchedule" class="col-xs-12">
-                    <h3>Representative orders - schedule</h3>
-                    <div class="k-widget k-scheduler k-floatwrap" id="EmployeeSales" data-role="scheduler" role="grid" aria-multiselectable="true" style=""><div class="k-floatwrap k-header k-scheduler-toolbar"><ul class="k-reset k-scheduler-navigation"><li class="k-state-default k-header k-nav-today"><a role="button" href="#" class="k-link" title="Today">Today</a></li><li class="k-state-default k-header k-nav-prev"><a role="button" href="#" class="k-link" title="Previous" aria-label="Previous"><span class="k-icon k-i-arrow-60-left" style="pointer-events: none"></span></a></li><li class="k-state-default k-header k-nav-next"><a role="button" href="#" class="k-link" title="Next" aria-label="Next"><span class="k-icon k-i-arrow-60-right" style="pointer-events: none"></span></a></li><li class="k-state-default k-nav-current"><a role="button" href="#" class="k-link"><span class="k-icon k-i-calendar"></span><span class="k-sm-date-format" data-bind="text: formattedShortDate">July, 1996</span><span class="k-lg-date-format" data-bind="text: formattedDate">July, 1996</span></a></li></ul><a role="button" data-name="undefined" href="#" class="k-link k-scheduler-refresh"><span class="k-icon k-i-reload"></span></a></div><table class="k-scheduler-layout k-scheduler-monthview"><tbody><tr><td><div class="k-scheduler-header k-state-default"><div class="k-scheduler-header-wrap"><table class="k-scheduler-table"><tbody><tr><th colspan="1" class="">Sunday</th><th colspan="1" class="">Monday</th><th colspan="1" class="">Tuesday</th><th colspan="1" class="">Wednesday</th><th colspan="1" class="">Thursday</th><th colspan="1" class="">Friday</th><th colspan="1" class="">Saturday</th></tr></tbody></table></div></div></td></tr><tr><td><div class="k-scheduler-content"><table class="k-scheduler-table"><tbody><tr role="row"><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">30</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">01</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">02</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">03</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">04</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">05</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">06</span></td></tr><tr role="row"><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">07</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">08</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">09</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">10</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">11</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">12</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">13</span></td></tr><tr role="row"><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">14</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">15</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">16</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">17</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">18</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">19</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">20</span></td></tr><tr role="row"><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">21</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">22</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">23</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">24</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">25</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">26</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">27</span></td></tr><tr role="row"><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">28</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">29</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">30</span></td><td role="gridcell" aria-selected="false"><span class="k-link k-nav-day">31</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">01</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">02</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">03</span></td></tr><tr role="row"><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">04</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">05</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">06</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">07</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">08</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">09</span></td><td class=" k-other-month" role="gridcell" aria-selected="false"><span class="k-link k-nav-day">10</span></td></tr></tbody></table><div role="gridcell" aria-selected="false" data-uid="0994604c-4389-40d1-8025-4db528c8acd1" style="top: 195px; width: 150px; left: 467px; height: 25px;" class="k-event"><span class="k-event-actions"></span><div title="Ernst Handel"><div class="k-event-template">Ernst Handel</div></div><span class="k-event-actions"></span></div><div role="gridcell" aria-selected="false" data-uid="f6dbf159-88dc-450d-8003-8ee2c5c45fcf" style="top: 373px; width: 150px; left: 622px; height: 25px;" class="k-event"><span class="k-event-actions"></span><div title="Wartian Herkku"><div class="k-event-template">Wartian Herkku</div></div><span class="k-event-actions"></span></div><div role="gridcell" aria-selected="false" data-uid="ad8a84c2-dd25-4e72-a635-7ae37bdee3fd" style="top: 462px; width: 150px; left: 467px; height: 25px;" class="k-event"><span class="k-event-actions"></span><div title="Magazzini Alimentari Riuniti"><div class="k-event-template">Magazzini Alimentari Riuniti</div></div><span class="k-event-actions"></span></div></div></td></tr></tbody></table></div>
-
-                </div>*@
         </div>
     </div>
 </div>
