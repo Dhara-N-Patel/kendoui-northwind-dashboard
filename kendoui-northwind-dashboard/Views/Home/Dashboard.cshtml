@@ -56,43 +56,9 @@
                         </li>
                     }
                 }
-                @*<li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><span class="icon fa fa-home"></span>Dashboard</a></li>
-                <li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>
-                <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
-                <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
-                <li id="CostSheets"><a href="@(Url.Action("CostSheets", "Home"))"><i class="icon fas  fa fa-file"></i>Cost Sheets</a></li>
-                <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
-                <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>*@
             </ul>
-            @*<div id="rights">
-                    <p>Copyright &copy; 2017, Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.</p>
-                </div>*@
         </div>
-        <!--open nav column-->
-        @*<ul id="EmployeesList" data-role="listview" class="k-widget k-listview k-selectable" role="listbox">
-                @*<li class="employee k-state-selected" role="option">
-                    <div class="employee-wrapper">
-                        <dl class="employee-list-details">
-                            <dt class="name" style="color:#6abd2d"><b>Payment Request</b></dt>
-                            <dd class="title" style="color:#024578"> @System.DateTime.Now</dd>
-                        </dl>
-                    </div>
-                </li>
 
-                @{
-                    for (int i = 0; i < 10; i++)
-                    {
-                        <li class="employee" aria-selected="false">
-                            <div class="employee-wrapper">
-                                <dl class="employee-list-details" >
-                                    <dt class="name" style="color:white"><b>Payment Request</b></dt>
-                                    <dd class="title" style="color:white">@System.DateTime.Now</dd>
-                                </dl>
-                            </div>
-                        </li>
-                    }
-                }
-            </ul>*@
     </div>
 
     <div id="employee-details-wrapper">
@@ -102,26 +68,108 @@
                     <div id="employeeBio" class="col-xs-12 col-sm-8" data-role="tooltip">
                         <div>
                             <h4 class="MainLbl">Freedom Tmp WSA: Sewage Treatment Plant</h4>
-
-                            <dl class="employee-bio-details">
-                                @*<dt class="name">Nancy Davolio</dt>
-                                    <dd class="title">Sales Representative</dd>
-                                    <dd class="phone"><span class="icon icon-mobile"></span>(206) 555-9857</dd>
-                                    <dd><a href="#" class="bioTooltip"> &gt;&gt;FULL BIO <span style="display:none;">Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.</span></a></dd>*@
-                            </dl>
+                            <table class="col-md-12">
+                                <tr class="col-md-5 Dashboard-Info">
+                                    <td>
+                                        <span class="info">ID:</span><span>07027021102-CS</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-7 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Company:</span><span> Freedom Water and Sewer Authority</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-5 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Loan:</span><span>72383</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-7 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Legal Entity:</span><span>Freedom Township</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-5 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Status:</span><span>Final Amoritization</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-7 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Business Pertner Number:</span><span>ABC01123</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-5 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Specialist:</span><span>Teresa Schlupp</span>
+                                    </td>
+                                </tr>
+                                <tr class="col-md-7 Dashboard-Info">
+                                    <td>
+                                        <span class="info">Approval Date:</span><span>10/26/2011</span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <h3>FUNDS AVAILABLE</h3>
                         <span id="FundsAvailable" class="LblGreen">$62,032.97</span>
                         <div class="sparkline-container">
-                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart"><svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><clipPath id="kdef31"><path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path></clipPath></defs><g><path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#fff"></path><path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0"></path><g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g><g></g></g></svg></div>
+                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <defs>
+                                        <clipPath id="kdef31">
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5"></path>
+                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                        </path>
+                                        <g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g>
+                                        <g></g>
+                                    </g>
+                                </svg>
+                            </div>
 
                         </div>
                         <h3>CONTRACT APPROVAL</h3>
                         <span id="ContractApproval" class="LblGreen">11/13</span>
                         <div class="sparkline-container">
-                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart"><svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><clipPath id="kdef31"><path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path></clipPath></defs><g><path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#fff"></path><path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0"></path><g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g><g></g></g></svg></div>
+                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                    <defs>
+                                        <clipPath id="kdef31">
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none">
+                                            </path>
+                                        </clipPath>
+                                    </defs>
+                                    <g>
+                                        <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5">
+                                        </path>
+                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                        </path>
+                                        <g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g clip-path="url(#kdef31)">
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path>
+                                                            <path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g>
+                                        </g>
+                                        <g></g>
+                                    </g>
+                                </svg>
+                            </div>
 
                         </div>
                     </div>
@@ -130,7 +178,7 @@
             </div>
             <div id="employee-details-wrapper">
                 <div id="employee-details" class="row">
-                    <div id="employee-about">
+                    <div id="budget-current">
                         <span class="LblBlue">
                             CURRENT BUDGET DURING DISPURSEMENT
                         </span>

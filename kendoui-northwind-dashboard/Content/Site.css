@@ -157,11 +157,13 @@ body,
     margin-top: 27px;
     border: none;
 }
-
-#toggle-button:hover,
-#toggle-button:focus {
-    background-color: transparent;
-}
+    .info {
+        color:#737374;
+    }
+    #toggle-button:hover,
+    #toggle-button:focus {
+        background-color: transparent;
+    }
 
 #toggle-button .icon-bar {
     background-color: #fff;
@@ -326,8 +328,12 @@ body,
     margin: 0 auto 10px;
    
 }
-
+.Dashboard-Info {
+    padding-left: 4%;
+    padding-bottom:2%;
+}
 .MainLbl {
+    padding: 4%;
     font-size: 18px;
     display: inline-block;
     color: #6abd2d;
@@ -368,16 +374,16 @@ input[type = "search"] {
 }
 
 #employee-about {
+    background-color: #F5F5F5;
     border-bottom: 1px solid #dbdbdb;
-  }
+}
 
 #employee-about .row {
     /*padding: 30px 0;*/      
 }
-
 #employee-about h3,
 #employeeSchedule h3,
-.section-header{
+.section-header {
     font-size: 11px;
     color: #35373d;
     text-transform: uppercase;
@@ -385,6 +391,9 @@ input[type = "search"] {
     padding: 15px 0;
 }
 
+#budget-current .LblBlue {
+    padding:2%;
+}
 #employeeSchedule {
     padding-left: 30px;
     padding-bottom: 20px;
