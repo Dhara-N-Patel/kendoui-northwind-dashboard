@@ -284,17 +284,23 @@ body,
     height: calc(100% - 86px);
 }
 
+.employee:hover .name{
+    color:#6abd2d;
+}
+.employee:hover .title {
+    color: #6abd2d !important;
+}
 .name {
     font-size: 14px;
-    color: #35373d;
+    color: white;
 }
 
 .title {
     font-size: 9px;
     line-height: 9px;
-    color: #8a8b8f;
-    text-transform: uppercase; 
-    display: inline-block;   
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
 }
 
 .phone {
