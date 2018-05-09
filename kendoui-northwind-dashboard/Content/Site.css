@@ -29,7 +29,7 @@ body,
 .container-fluid,
 .row,
 .column {
-    height: 800px;
+    height: 100%;
 }
 
 /* font */
