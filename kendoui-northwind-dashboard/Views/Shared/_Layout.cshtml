@@ -1,81 +1,93 @@
 ﻿
 <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Northwind Dashboard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-        @Styles.Render("~/Content/css")
-        @Styles.Render("~/Content/kendo/css")
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/kendo")
+<html>
+<head>
+    <title>Northwind Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/kendo/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
-        <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
-    </head>
-    <body>
-      <!-- Google Tag Manager -->
-      <noscript>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-6X92" height="0" width="0" style="display: none; visibility: hidden"></iframe>
-      </noscript>
-      <script>(function(w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
-      <!-- End Google Tag Manager -->
-        <div class="container-fluid"><!--open container-->
-            <div class="row row-offcanvas row-offcanvas-left"><!--open row-->
-                <div id="nav-section" class="col-xs-1 column">
-                    <!--open nav column-->
-                    <div class="navbar-default">
-                        <button id="toggle-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+    </noscript>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-6X92');</script>
+    <!-- End Google Tag Manager -->
+    <div class="container-fluid">
+        <!--open container-->
+        <div class="row row-offcanvas row-offcanvas-left">
+            <!--open row-->
+            <div id="nav-section" class="col-xs-1 column">
+                <!--open nav column-->
+                <div class="navbar-default">
+                    <button id="toggle-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
+                    <ul class="nav">
+                        <li><h1> <img id="dash-logo" src="~/Content/images/Pennvestlogo.png" style="width:100%" /></h1></li>
+                        <li id="Dashboard"><a href="@(Url.Action("Projects", "Home"))"><span class="icon fa fa-home"></span>Projects</a></li>
+                        <li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><span class="icon fa fa-home"></span>Dashboard</a></li>
+                        <li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>
+                        <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
+                        <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
+                        <li id="CostSheets"><a href="@(Url.Action("CostSheets", "Home"))"><i class="icon fas  fa fa-file"></i>Cost Sheets</a></li>
+                        <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
+                        <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>
+                    </ul>
+                    <div style="padding:15%;">
+                        <i class="icon fa fa-facebook-square" style="color:#e2d9d9; font-size:16px"></i>
+                        <i class="icon fa fa-twitter-square" style="color:#e2d9d9; font-size:16px"></i>
+                        <i class="icon fa fa-gear" style="color:#e2d9d9; font-size:16px"></i>
+                        <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
+                        <i class="icon fa fa-gear" style="color:#e2d9d9; font-size:16px"></i>
+                        <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
                     </div>
-                   
-                    <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
-                        <ul class="nav">
-                            <li><h1> <img id="dash-logo" src="~/Content/images/Pennvestlogo.png" style="width:100%" /></h1></li>
-                            <li id="Dashboard"><a href="@(Url.Action("Projects", "Home"))"><span class="icon fa fa-home"></span>Projects</a></li>
-                            <li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><span class="icon fa fa-home"></span>Dashboard</a></li>
-                            <li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>
-                            <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
-                            <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
-                            <li id="CostSheets"><a href="@(Url.Action("CostSheets", "Home"))"><i class="icon fas  fa fa-file"></i>Cost Sheets</a></li>
-                            <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
-                            <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>
-                        </ul>
+                    <div id="rights">
+                        <p>Copyright &copy; 2017, Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.</p>
                     </div>
-                </div><!--close left column-->
-               
-                <div id="main-section" class="col-xs-12 column">
-                    <div id="main-section-header" class="row">
-                        <div id="dateFilter" class="col-md-12">
-                            <i class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left"></i>
-                            <div class="period-wrapper">
-                                <input type="search" placeholder="&#xf002 Search">
-                                &nbsp;&nbsp;
-                                <i class="icon fa fa-gear" style="color:#e2d9d9; font-size:16px"></i>
-                                <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
-                                <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
-                            </div>
-                            <p style="color:#e2d9d9; font-size:12px; padding-right:2%">Administrator</p>
-                        </div>
-                        <div style="clear:both;"></div>
-                    </div>
-                    <!--open main column-->
-                    @RenderBody()
-                </div><!--close main column-->
-            </div><!--close row-->
-        </div><!--close container-->
+                </div>
+            </div><!--close left column-->
 
-        <script>
-            $(document).ready(function () {
-                $('[data-toggle=offcanvas]').click(function () {
-                    $('.row-offcanvas').toggleClass('active');
-                });
+            <div id="main-section" class="col-xs-12 column">
+                <div id="main-section-header" class="row">
+                    <div id="dateFilter" class="col-md-12">
+                        <i class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left"></i>
+                        <div class="period-wrapper">
+                            <input type="search" placeholder="&#xf002 Search">
+                            &nbsp;&nbsp;
+                            <i class="icon fa fa-cog" style="color:#e2d9d9; font-size:16px"></i>
+                            <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
+                            <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
+                        </div>
+                        <p style="color:#e2d9d9; font-size:12px; padding-right:2%">Administrator</p>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <!--open main column-->
+                @RenderBody()
+            </div><!--close main column-->
+        </div><!--close row-->
+    </div><!--close container-->
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle=offcanvas]').click(function () {
+                $('.row-offcanvas').toggleClass('active');
             });
-        </script>
-    </body>
-    </html>
+        });
+    </script>
+</body>
+</html>
