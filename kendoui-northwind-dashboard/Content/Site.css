@@ -93,7 +93,16 @@ body,
 
 .table {
     margin-left: 1.5%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
 }
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
 
 .CostCategoryLbl {
     color: #6abd2d;
@@ -260,9 +269,12 @@ body,
 }
 
 #employee-details-wrapper {
-    height: 100%;
     overflow-y: auto;
     background-color: #fff;
+    border: none;
+    overflow: auto;
+    height: 100%;
+    height: calc(100% - 86px);
 }
 
 #employee-details {
@@ -308,13 +320,6 @@ body,
     overflow: auto;
     height: 100%;
     height: calc(100% - 154px);
-}
-
-#employee-details-wrapper {
-    border: none;
-    overflow: auto;
-    height: 100%;
-    height: calc(100% - 86px);
 }
 
 .employee:hover .name {
@@ -725,6 +730,13 @@ tr.spaceUnder > td {
     background-color: #fff;
 }
 
+.AdminLbl {
+    color: #e2d9d9;
+    font-size: 12px;
+    padding-right: 2%;
+    padding-left: 70%;
+}
+
 .download-btn {
     color: #fff;
     background-color: #ee5315;
@@ -763,11 +775,53 @@ tr.spaceUnder > td {
     width: 60%;
 }
 
+@media (min-width: 992px){
+    .ProjectsGraph {
+        padding: 0px 60px 0px 30px;
+    }
+    .thumbnail {
+        height: 340px;
+    }
+}
+@media (min-width: 992px) {
+    .ProjectsGraph {
+        padding: 0px 60px 0px 30px;
+    }
+
+    .thumbnail {
+        height: 340px;
+    }
+}
 
 /*max-width: 768px -> .col-xs- */
 @media screen and (max-width: 768px) {
+    #bar{
+        display:none;
+    }
+    #main-section {
+        width: 90%;
+        overflow:auto;
+    }
+    #dateFilter {
+        padding: 10px;
+        padding-right: 4%;
+    }
+        .AdminLbl {
+        padding-right: 0px;
+        padding-left: 70%;
+    }
+    input[type = "search"] {
+        width: 100px;
+    }
+    #Employees-List {
+        display:none;
+    }
     .column {
         height: auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
     }
 
     .row-offcanvas {
@@ -807,8 +861,9 @@ tr.spaceUnder > td {
         width: 100%;
         height: auto;
     }
-
+    /*Phone*/
     @media screen and (min-width: 768px) {
+       
         .modal-dialog {
             left: 0% !important;
         }
@@ -842,7 +897,7 @@ tr.spaceUnder > td {
         }
     }
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 380px) and (min-width: 360px) {
         .select-period {
             display: none;
         }
@@ -1012,3 +1067,6 @@ tr.spaceUnder > td {
         display: block;
     }
 }
+
+
+
