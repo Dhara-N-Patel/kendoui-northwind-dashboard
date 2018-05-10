@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Northwind Dashboard</title>
+    <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     @Styles.Render("~/Content/css")
@@ -47,16 +47,20 @@
                         <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
                         <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>
                     </ul>
-                    <div style="padding:15%;">
-                        <i class="icon fa fa-facebook-square" style="color:#e2d9d9; font-size:16px"></i>
-                        <i class="icon fa fa-twitter-square" style="color:#e2d9d9; font-size:16px"></i>
-                        <i class="icon fa fa-gear" style="color:#e2d9d9; font-size:16px"></i>
-                        <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
-                        <i class="icon fa fa-gear" style="color:#e2d9d9; font-size:16px"></i>
-                        <i class="icon fa fa-bell" style="color:#e2d9d9; font-size:16px"></i>
+                    <div style="padding:10%">
+                        <i class="fa fa-facebook-square" style="color:#e2d9d9; padding-left:15%; font-size:30px"></i>
+                        <i class="fa fa-google-plus-square" style="color:#e2d9d9; font-size:30px"></i>
+                        <i class="fa fa-linkedin-square" style="color:#e2d9d9; font-size:30px"></i>
+                        <i class="fa fa-twitter-square" style="color:#e2d9d9; font-size:30px"></i>
+                        <i class="fa fa-youtube-square" style="color:#e2d9d9; font-size:30px"></i>
                     </div>
                     <div id="rights">
-                        <p>Copyright &copy; 2017, Progress Software Corporation and/or its subsidiaries or affiliates. All Rights Reserved.</p>
+                        <p style="text-align:center;">
+                            &copy;2018, Commonwealth of Pennsylvania.
+                            <br />All Rights Reserved.
+                            <br /> <span style="text-decoration:underline">Privacy</span> .
+                            <span style="text-decoration:underline">Security Statement</span>
+                        </p>
                     </div>
                 </div>
             </div><!--close left column-->
