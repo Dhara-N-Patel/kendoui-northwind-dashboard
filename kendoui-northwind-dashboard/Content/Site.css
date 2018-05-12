@@ -235,7 +235,7 @@ th, td {
     text-transform: uppercase;
     line-height: 26px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    background-color: #024578;
 }
 
 .employee:hover {
@@ -795,8 +795,13 @@ tr.spaceUnder > td {
 
 /*max-width: 768px -> .col-xs- */
 @media screen and (max-width: 768px) {
-    #bar{
-        display:none;
+     #SocialMedia {
+        display: none;
+    } #rights {
+        display: none;
+    } 
+    #bar {
+        display: none;
     }
     #main-section {
         width: 90%;
