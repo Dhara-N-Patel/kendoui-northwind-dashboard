@@ -6,16 +6,34 @@
 
 <div class="main-section-content row" style="">
     <div id="Employees-List" class="col-xs-1 column">
+        <a href="@(Url.Action("NotificationSettings", "Home"))" class="pull-right clickable"><i class="fa fa-gear" style="color:white; font-size:16px" title="Notification Settings"></i></a>
+        @*<i class="fa fa-gear pull-right" style="color:white; font-size:16px"></i>*@
         <h3 style="color:white"><b>NOTIFICATIONS</b></h3>
         <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
             <ul class="nav">
                 @{
-                    for (int i = 0; i < 10; i++)
+                    for (int i = 0; i < 3; i++)
                     {
                         <li class="employee" aria-selected="false">
                             <div class="employee-wrapper">
                                 <dl class="employee-list-details">
                                     <dt class="name"><b>Payment Request</b></dt>
+                                    <dd class="title">@System.DateTime.Now</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="employee" aria-selected="false">
+                            <div class="employee-wrapper">
+                                <dl class="employee-list-details">
+                                    <dt class="name"><b>Change Order</b></dt>
+                                    <dd class="title">@System.DateTime.Now</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="employee" aria-selected="false">
+                            <div class="employee-wrapper">
+                                <dl class="employee-list-details">
+                                    <dt class="name"><b>Submit Cost Sheet</b></dt>
                                     <dd class="title">@System.DateTime.Now</dd>
                                 </dl>
                             </div>
@@ -28,12 +46,12 @@
     </div>
 
     <div id="employee-details-wrapper">
-        <div id="employee-details">
+        <div id="employee-details" class="row">
             <div id="employee-about">
-                <div class="row" style="height:100% !important">
-                    <div id="employeeBio" class="col-xs-12 col-sm-8" data-role="tooltip">
-                        <div>
-                            <h4 class="MainLbl">Freedom Tmp WSA: Sewage Treatment Plant</h4>
+                <div class="row" style="height:100%">
+                    <h4 class="MainLbl">Freedom Township Water & Sewer Authority: Sewage Treatment Plant</h4>
+                    <div id="employeeBio"  data-role="tooltip">
+                        <div class="col-md-8" style="overflow-x:auto;">
                             <table class="col-md-12">
                                 <tr class="col-md-5 Dashboard-Info">
                                     <td>
@@ -77,72 +95,71 @@
                                 </tr>
                             </table>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <h3>FUNDS AVAILABLE</h3>
-                        <span id="FundsAvailable" class="LblGreen">$62,032.97</span>
-                        <div class="sparkline-container">
-                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
-                                <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <defs>
-                                        <clipPath id="kdef31">
-                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
-                                        </clipPath>
-                                    </defs>
-                                    <g>
-                                        <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5"></path>
-                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
-                                        </path>
-                                        <g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g>
-                                        <g></g>
-                                    </g>
-                                </svg>
-                            </div>
-
-                        </div>
-                        <h3>CONTRACT APPROVAL</h3>
-                        <span id="ContractApproval" class="LblGreen">11/13</span>
-                        <div class="sparkline-container">
-                            <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
-                                <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                    <defs>
-                                        <clipPath id="kdef31">
-                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none">
-                                            </path>
-                                        </clipPath>
-                                    </defs>
-                                    <g>
-                                        <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5">
-                                        </path>
-                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
-                                        </path>
+                        <div class="col-md-4" style="margin-top:-3%">
+                            <h3>FUNDS AVAILABLE</h3>
+                            <span id="FundsAvailable" class="LblGreen">$62,032.97</span>
+                            <div class="sparkline-container">
+                                <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                    <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                        <defs>
+                                            <clipPath id="kdef31">
+                                                <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                            </clipPath>
+                                        </defs>
                                         <g>
+                                            <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5"></path>
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                            </path>
+                                            <g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g>
                                             <g></g>
-                                            <g></g>
-                                            <g></g>
-                                            <g clip-path="url(#kdef31)">
-                                                <g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <h3>CONTRACT APPROVAL</h3>
+                            <span id="ContractApproval" class="LblGreen">11/13</span>
+                            <div class="sparkline-container">
+                                <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                    <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                        <defs>
+                                            <clipPath id="kdef31">
+                                                <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                        <g>
+                                            <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5">
+                                            </path>
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                            </path>
+                                            <g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g clip-path="url(#kdef31)">
                                                     <g>
                                                         <g>
-                                                            <path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path>
-                                                            <path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path>
+                                                            <g>
+                                                                <path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path>
+                                                                <path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path>
+                                                            </g>
                                                         </g>
                                                     </g>
                                                 </g>
+                                                <g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g>
                                             </g>
-                                            <g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g>
+                                            <g></g>
                                         </g>
-                                        <g></g>
-                                    </g>
-                                </svg>
-                            </div>
+                                    </svg>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div id="employee-details-wrapper">
+            <div id="employee-details-wrapper" style="margin:1.5%">
                 <div id="employee-details" class="row">
                     <div id="budget-current">
                         <span class="LblBlue">
@@ -234,7 +251,6 @@
                             </tbody>
                         </table>
                     </div>
-                   
                 </div>
             </div>
         </div>

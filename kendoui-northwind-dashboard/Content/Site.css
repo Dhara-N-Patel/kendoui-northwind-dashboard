@@ -2,8 +2,8 @@
 h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, ol, ul, li,
 table, tfoot, thead, tr, th, td,
 article, aside, canvas, details, footer, header, section {
-    margin: 0;
-    padding: 0;
+    /*margin: 0;
+    padding: 0;*/
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -29,7 +29,7 @@ body,
 .container-fluid,
 .row,
 .column {
-    height: 800px;
+    /*height: 1500px;*/
 }
 
 /* font */
@@ -142,7 +142,7 @@ th, td {
     background-color: #024578;
     width: 280px;
     float: left;
-    height: 100%;
+    height: 1150px;
 }
 
     #nav-section li {
@@ -213,9 +213,9 @@ th, td {
 #main-section {
     float: none;
     width: auto;
-    overflow: hidden;
+    overflow: scroll;
     height: 100%;
-    background-color: #eee;
+    /*background-color: #eee;*/
 }
 
 #employee-list {
@@ -272,7 +272,7 @@ th, td {
     overflow-y: auto;
     background-color: #fff;
     border: none;
-    overflow: auto;
+    /*overflow: auto;*/
     height: 100%;
     height: calc(100% - 86px);
 }
@@ -367,12 +367,12 @@ th, td {
 }
 
 .Dashboard-Info {
-    padding-left: 4%;
-    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-bottom: 1.5%;
 }
 
 .MainLbl {
-    padding: 4%;
+    padding: 2%;
     font-size: 18px;
     display: inline-block;
     color: #6abd2d;
@@ -390,7 +390,7 @@ th, td {
     color: gray;
 }
 
-.ProjectsGraphMainLbl {
+.ProjectsMainLbl {
     font-size: 20px;
     color: #6abd2d;
 }
@@ -416,6 +416,7 @@ input[type = "search"] {
     font-size: 14px;
     display: inline-block;
     color: #024578;
+    margin:2%;
 }
 
 .employee-list-image,
@@ -451,12 +452,15 @@ input[type = "search"] {
         font-size: 11px;
         color: #35373d;
         text-transform: uppercase;
-        padding-bottom: 1.091em;
-        padding: 15px 0;
+        /*padding-bottom: 1.091em;
+        padding: 15px 0;*/
     }
 
-#budget-current .LblBlue {
+.budget-current .LblBlue {
     padding: 2%;
+}
+.budget-current {
+    padding: 1.5%;
 }
 
 #employeeSchedule {
@@ -501,21 +505,29 @@ tr.spaceUnder > td {
 
 .Status {
     float: left;
-    margin: 0px 0px 10px -20px;
+    margin: 0px 0px 10px -40px;
     background-color: #6abd2d;
     color: white;
     padding: 5px 30px 5px 30px;
+    border-radius: 3px;
 }
-
+.Project-Info {
+    padding-left: 4%;
+    padding-bottom: 0.5%;
+}
 .thumbnail {
-    position: relative;
+    border: 1px solid #888888;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #888888;
+    height: 300px !important;
+    /*position: relative;
     top: 15px;
     bottom: 0;
     left: 15px;
     right: 0;
     height: 300px;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 10%;*/
 }
 
 /* Kendo widgets */
@@ -780,10 +792,16 @@ tr.spaceUnder > td {
         padding: 0px 60px 0px 30px;
     }
     .thumbnail {
+        width: 90%;
         height: 340px;
     }
 }
 @media (min-width: 992px) {
+    .Project-Info {
+        padding-left: 4%;
+        margin-bottom: -10px;
+        padding-bottom:0px;
+    }
     .ProjectsGraph {
         padding: 0px 60px 0px 30px;
     }
@@ -795,6 +813,9 @@ tr.spaceUnder > td {
 
 /*max-width: 768px -> .col-xs- */
 @media screen and (max-width: 768px) {
+    .thumbnail {
+        height: 1100px !important;
+    }
      #SocialMedia {
         display: none;
     } #rights {

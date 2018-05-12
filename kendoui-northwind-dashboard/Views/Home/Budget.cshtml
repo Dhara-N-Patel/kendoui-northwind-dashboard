@@ -3,279 +3,293 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Budget</h2>
+<div class="main-section-content row" style="">
+    <div>
+        <div id="employee-details-wrapper">
+            <div id="employee-details" class="row">
+                <div id="employee-about">
+                    <div class="row" style="height:100%">
+                        <div id="employeeBio" class="col-xs-12 col-sm-8" data-role="tooltip">
+                            <div>
+                                <h4 class="MainLbl">Freedom Township Water & Sewer Authority: Sewage Treatment Plant</h4>
+                                <table class="col-md-12">
+                                    <tr class="col-md-5 Dashboard-Info">
+                                        <td>
+                                            <span class="info">ID:</span><span>07027021102-CS</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-7 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Company:</span><span> Freedom Water and Sewer Authority</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-5 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Loan:</span><span>72383</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-7 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Legal Entity:</span><span>Freedom Township</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-5 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Status:</span><span>Final Amoritization</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-7 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Business Pertner Number:</span><span>ABC01123</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-5 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Specialist:</span><span>Teresa Schlupp</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="col-md-7 Dashboard-Info">
+                                        <td>
+                                            <span class="info">Approval Date:</span><span>10/26/2011</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h3>FUNDS AVAILABLE</h3>
+                            <span id="FundsAvailable" class="LblGreen">$62,032.97</span>
+                            <div class="sparkline-container">
+                                <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                    <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                        <defs>
+                                            <clipPath id="kdef31">
+                                                <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                            </clipPath>
+                                        </defs>
+                                        <g>
+                                            <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5"></path>
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                            </path>
+                                            <g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g>
+                                            <g></g>
+                                        </g>
+                                    </svg>
+                                </div>
 
-@*@using KendoUI.Northwind.Dashboard.Models;
+                            </div>
+                            <h3>CONTRACT APPROVAL</h3>
+                            <span id="ContractApproval" class="LblGreen">11/13</span>
+                            <div class="sparkline-container">
+                                <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
+                                    <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                                        <defs>
+                                            <clipPath id="kdef31">
+                                                <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none">
+                                                </path>
+                                            </clipPath>
+                                        </defs>
+                                        <g>
+                                            <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="#F5F5F5">
+                                            </path>
+                                            <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
+                                            </path>
+                                            <g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g clip-path="url(#kdef31)">
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path>
+                                                                <path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g>
+                                            </g>
+                                            <g></g>
+                                        </g>
+                                    </svg>
+                                </div>
 
-    <script type="text/x-kendo-tmpl" id="employeeItemTemplate">
-        <div class="employee">
-            <div class="employee-wrapper">
-                <img src="@(Url.Content("~/content/employees/"))#:EmployeeID#-t.png" class="img-responsive employee-list-image"/>
-                <dl class="employee-list-details">
-                    <dt class="name">#:FirstName# #:LastName#</dt>
-                    <dd class="title">#:Title#</dd>
-                </dl>
-            </div>
-        </div>
-    </script>
-
-    <script type="text/x-kendo-tmpl" id="employeeBioTemplate">
-        <div>
-            <h3>ABOUT</h3>
-            <img src="@(Url.Content("~/content/employees/"))#:EmployeeID#.png" class="img-responsive employee-details-image" />
-            <dl class="employee-bio-details">
-                <dt class="name">#:FirstName# #:LastName#</dt>
-                <dd class="title">#:Title#</dd>
-                <dd class="phone"><span class="icon icon-mobile"></span>#:HomePhone#</dd>
-                <dd><a href='\\#' class='bioTooltip'> >>FULL BIO <span style='display:none;'>#:Notes#</span></a></dd>
-            </dl>
-        </div>
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#Budget").addClass("active");
-            $("#dateFilter").kendoValidator({
-                rules: {
-                    startDate: function (input) {
-                        if (input.is("#StartDate")) {
-                            startDate = kendo.parseDate(input.val());
-                            endDate = kendo.parseDate($("#EndDate").val());
-                            if (startDate > endDate) {
-                                return false;
-                            }
-                        }
-                        return true;
-                    },
-                    endDate: function (input) {
-                        if (input.is("#EndDate")) {
-                            startDate = kendo.parseDate($("#StartDate").val());
-                            endDate = kendo.parseDate(input.val());
-                            if (startDate > endDate) {
-                                return false;
-                            }
-                        }
-                        return true;
-                    },
-                },
-                messages: {
-                    startDate: "Start date should preceed the End date.",
-                    endDate: "End date should not preceed the Start date."
-                }
-            });
-        });
-
-        function onListDataBound(e) {
-            this.select($(".employee:first"));
-        }
-        function onCriteriaChange() {
-            var employeeList = $("#EmployeesList").data("kendoListView"),
-                employee = employeeList.dataSource.getByUid(employeeList.select().attr("data-uid")),
-                employeeQuarterSales = $("#EmployeeQuarterSales").data("kendoChart"),
-                employeeAverageSales = $("#EmployeeAverageSales").data("kendoChart"),
-                teamSales = $("#TeamSales").data("kendoChart"),
-                employeeSales = $("#EmployeeSales").data("kendoScheduler"),
-                startDate = $("#StartDate").data("kendoDatePicker"),
-                endDate = $("#EndDate").data("kendoDatePicker"),
-                filter = { EmployeeID: employee.EmployeeID, startDate: startDate.value(), endDate: endDate.value() },
-                template = kendo.template($("#employeeBioTemplate").html());
-
-            $("#employeeBio").html(template(employee));
-
-            employeeSales.dataSource.filter({ field: "EmployeeID", operator: "eq", value: employee.EmployeeID });
-
-            teamSales.dataSource.read(filter);
-
-            employeeQuarterSales.dataSource.read(filter);
-            employeeAverageSales.dataSource.read(filter);
-        }
-        function getBio(e) {
-            return e.target.find("span").text();
-        }
-        function onQuarterSalesDataBound(e) {
-            var data = this.dataSource.at(0);
-            $("#EmployeeQuarterSalesLabel").text(kendo.toString(data.Current,"c2"));
-        }
-        function onAverageSalesDataBound(e) {
-            var data = this.dataSource.aggregates()
-            if (data.EmployeeSales) {
-                $("#EmployeeAverageSalesLabel").text(kendo.toString(data.EmployeeSales.average, "c2"));
-            } else {
-                $("#EmployeeAverageSalesLabel").text(kendo.toString(0, "c2"));
-            }
-        }
-
-        $(window).on("resize", function () {
-            kendo.resize($("#TeamSales"));
-            var containerWidth = $(".sparkline-container").parent().width();
-            $("#EmployeeQuarterSales").data("kendoChart").setOptions({ chartArea: { width: containerWidth } });
-            $("#EmployeeAverageSales").data("kendoChart").setOptions({ chartArea: { width: containerWidth } });
-        });
-    </script>
-
-    @(Html.Kendo().Tooltip()
-        .For("#employeeBio")
-        .Filter("a")
-        .ContentHandler("getBio")
-    )
-
-    <div id="main-section-header" class="row">
-        <h2 id="team-efficiency" class="col-xs-3">Team efficiency</h2>
-        <div id="dateFilter" class="col-xs-9">
-            <div class="period-wrapper">
-                <label for="StartDate" class="select-period">Stats from</label>
-                @(Html.Kendo().DatePicker()
-                    .Name("StartDate")
-                    .Value(new DateTime(1996, 1, 1))
-                    .Events(e=>e.Change("onCriteriaChange"))
-                )
-                <span class="k-invalid-msg" data-for="StartDate"></span>
-            </div>
-            <div class="period-wrapper">
-                <label for="EndDate" class="select-period">To</label>
-                @(Html.Kendo().DatePicker()
-                    .Name("EndDate")
-                    .Value(new DateTime(1998, 8, 1))
-                    .Events(e=>e.Change("onCriteriaChange"))
-                )
-                <span class="k-invalid-msg" data-for="EndDate"></span>
-            </div>
-        </div>
-        <div style="clear:both;"></div>
-    </div>
-
-    <div class="main-section-content row" style="">
-
-    <div id="employee-list" class="col col-xs-2">
-        <h3>TEAM MEMBERS</h3>
-        @(Html.Kendo().ListView<EmployeeViewModel>()
-            .Name("EmployeesList")
-            .TagName("div")
-            .Events(e=>e.DataBound("onListDataBound").Change("onCriteriaChange"))
-            .ClientTemplateId("employeeItemTemplate")
-            .DataSource(dataSource => {
-                dataSource.Read(read => read.Action("EmployeesList", "Team"));
-                dataSource.PageSize(9);
-            })
-            .Selectable(s=>s.Mode(ListViewSelectionMode.Single))
-        )
-    </div>
-    <div id="employee-details-wrapper"class="col col-xs-10">
-        <div id="employee-details" class="row">
-            <div id="employee-about" class="col-xs-12 placeholder">
-                <div class="row">
-                <div id="employeeBio" class="col-xs-12 col-sm-4">
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <h3>Quarter to date sales</h3>
-                    <span id="EmployeeQuarterSalesLabel"></span>
-                    <div class="sparkline-container">
-                        @(Html.Kendo().Chart<QuarterToDateSalesViewModel>()
-                            .Name("EmployeeQuarterSales")
-                            .Theme("metro")
-                            .HtmlAttributes(new {style = "height:30px;" } )
-                            .AutoBind(false)
-                            .Tooltip(false)
-                            .Events(e=>e.DataBound("onQuarterSalesDataBound"))
-                            .DataSource(ds => ds
-                                .Read(read => read.Action("EmployeeQuarterSales", "Team"))
-                            )
-                            .Series(series =>
-                            {
-                                series.Bullet(m => m.Current, m => m.Target);
-                            })
-                            .Legend(leg => leg.Visible(false))
-                            .CategoryAxis(cat => cat.Labels(lab => lab.Visible(false)).MajorGridLines(m => m.Visible(false)).Visible(false))
-                            .ValueAxis(val => val.Numeric().Labels(lab =>lab.Visible(false)).MajorGridLines(m => m.Visible(false)).MajorTicks(mT => mT.Visible(false)))
-                        )
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4">
-                    <h3>Monthly Average Sales</h3>
-                    <span id="EmployeeAverageSalesLabel"></span>
-                    <div class="sparkline-container">
-                        @(Html.Kendo().Chart<MonthlySalesByEmployee_Result>()
-                            .Name("EmployeeAverageSales")
-                            .Theme("metro")
-                            .HtmlAttributes(new {style = "height:30px;" } )
-                            .AutoBind(false)
-                            .Events(e=>e.DataBound("onAverageSalesDataBound"))
-                            .DataSource(ds => ds
-                                .Aggregates(a=>a.Add(s=>s.EmployeeSales).Average())
-                                .Read(read => read.Action("EmployeeAverageSales", "Team"))
-                            )
-                            .Series(series =>
-                            {
-                                series.Line(model => model.EmployeeSales).Width(1.5).Markers(m => m.Visible(false)).Tooltip(t => t.Template("#=kendo.toString(value, 'c2')#"));
-                            })
-                            .CategoryAxis(c=>c
-                                .Date()
-                                .Categories(x=>x.Date)
-                                .Visible(false).MajorGridLines(m => m.Visible(false)).MajorTicks(mT => mT.Visible(false))
-                            )
-                            .Legend(leg => leg.Visible(false))
-                            .ValueAxis(val => val.Numeric().Visible(false).Labels(lab =>lab.Visible(false)).MajorGridLines(m => m.Visible(false)).MajorTicks(mT => mT.Visible(false)))
-                        )
+                <div class="budget-current">
+                    <div class="col-md-12 input-group pull-left">
+                        <select class="col-md-2 form-control" id="ProposedBudget">
+                            <option value="" disabled selected hidden>PROPOSED BUDGET</option>
+                            <option value="1">PROPOSED BUDGET-1</option>
+                            <option value="2">PROPOSED BUDGET-2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 input-group pull-left" style="margin-bottom:2%">
+                        <select class="col-md-2 form-control" id="CurrentBudget">
+                            <option value="" disabled selected hidden>CURRENT BUDGET</option>
+                            <option value="1">CURRENT BUDGET-1</option>
+                            <option value="2">CURRENT BUDGET-2</option>
+                        </select>
                     </div>
                 </div>
+                <div style="overflow-x:auto;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>COST CATEGORY</th>
+                                <th>PENNVEST FUNDING</th>
+                                <th>OTHER FUNDING</th>
+                                <th>TOTAL FUNDING</th>
+                                <th>ADJUSTMENTS</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="CostCategoryLbl">Administrative Costs </td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Legal Fees</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Financing/Accounting Changes</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Interest During Construction</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Architecture Engineering Fees</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Permits</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Land</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Construction</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Contingency</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl">Other</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                                <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
-            <div id="employeeStats" class="col-xs-12">
-                @(Html.Kendo().Chart<SalesAmounts_Result>()
-                    .Name("TeamSales")
-                    .Theme("metro")
-                    .Title(t => t.Text("REPRESENTATIVE SALES VS. TOTAL SALES").Align(ChartTextAlignment.Left).Font("11px sans-serif").Color("#35373d"))
-                    .HtmlAttributes(new {style = "height:200px;" } )
-                    .AutoBind(false)
-                    .Legend(l=>l.Position(ChartLegendPosition.Bottom))
-                    .DataSource(ds => ds.Read(read => read.Action("EmployeeAndTeamSales", "Team")))
-                    .Series(series =>
-                    {
-                        series.Column(model => model.EmployeeSales).CategoryField("Date") .Name("Employee Sales").Aggregate(ChartSeriesAggregate.Sum);
-                        series.Column(model => model.TotalSales).CategoryField("Date").Name("Team Sales").Aggregate(ChartSeriesAggregate.Sum);
-                    })
-                    .CategoryAxis(axis => axis
-                        .Date()
-                        .BaseUnit(ChartAxisBaseUnit.Months)
-                        .MajorGridLines(lines => lines.Visible(false))
-                    )
-                    .ValueAxis(axis => axis.Numeric()
-                        .Labels(labels => labels.Format("{0:c2}").Visible(false))
-                        .MajorUnit(25000)
-                        .Line(line => line.Visible(false))
-                        .MajorGridLines(m => m.Visible(false))
-                    )
-                    .Tooltip(tooltip => tooltip
-                        .Visible(true)
-                        .Format("{0:c2}")
-                    )
-                )
-            </div>
-            <div id="employeeSchedule" class="col-xs-12">
-                 <h3>Representative orders - schedule</h3>
-                @(Html.Kendo().Scheduler<SaleViewModel>()
-                    .Name("EmployeeSales")
-                    .AutoBind(false)
-                    .Date(new DateTime(1996, 7, 1))
-                    .Views(views =>
-                    {
-                        views.MonthView();
-                    })
-                    .Editable(false)
-                    .Timezone("Etc/UTC")
-                    .Resources(resource =>
-                    {
-                        resource.Add(m => m.EmployeeID)
-                            .Title("Employee")
-                            .DataTextField("EmployeeName")
-                            .DataValueField("EmployeeID")
-                            .DataSource(dataSource => {
-                                dataSource.Read(read => read.Action("GetEmployees", "Team"));
-                            });
-                    })
-                    .DataSource(d => d.Read("EmployeeSales", "Team"))
-                )
+                <div class="budget-current">
+                    <div class="col-md-12 input-group pull-left">
+                        <select class="col-md-2 form-control" id="AprrovedBudget">
+                            <option value="" disabled selected hidden>APPROVED BUDGET</option>
+                            <option value="1">APPROVED BUDGET-1</option>
+                            <option value="2">APPROVED BUDGET-2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 input-group pull-left"style="margin-bottom:2%">
+                        <select class="col-md-2 form-control" id="SettlementBudget">
+                            <option value="" disabled selected hidden>SETTLEMENT BUDGET</option>
+                            <option value="1">SETTLEMENT BUDGET-1</option>
+                            <option value="2">SETTLEMENT BUDGET-2</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        </div>*@
+</div>
+<div class="modal fade" id="Approve" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">APPROVE/DENY</h4>
+            </div>
+            <div class="modal-body" style="text-align:center;">
+                <table class="col-md-12">
+                    <tr class="spaceUnder">
+                        <td></td>
+                        <td class="product-name"> ABC Construction:&ensp;&ensp;	$199,842,329.00</td>
+                        <td></td>
+                    </tr>
+                    <tr class="spaceUnder">
+                        <td class="col-md-2"></td>
+                        <td class="col-md-8 input-group">
+                            <select class="col-md-2 form-control" id="AprrovalDdl">
+                                <option value="1">Yes, I approve</option>
+                                <option value="2">I Deny</option>
+                            </select>
+                        </td>
+                        <td class="col-md-2"></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2"></td>
+                        <td class="col-md-8 input-group">
+                            <textarea class="form-control" rows="5" placeholder="Reason" required></textarea>
+                        </td>
+                        <td class="col-md-2"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-9">
+                    <button type="button" class="btnPopup btn btn-primary pull-right" data-dismiss="modal">I APPROVE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

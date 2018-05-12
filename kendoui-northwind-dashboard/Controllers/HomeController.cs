@@ -20,6 +20,10 @@ namespace KendoUI.Northwind.Dashboard.Controllers
         {
             return View();
         }
+        public ActionResult NotificationSettings()
+        {
+            return View();
+        }
         public ActionResult Settlement()
         {
             //ViewData["employees"] = GetEmployees();
