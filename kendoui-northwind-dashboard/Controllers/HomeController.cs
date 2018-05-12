@@ -49,6 +49,10 @@ namespace KendoUI.Northwind.Dashboard.Controllers
         {
             return View();
         }
+        public ActionResult Resources()
+        {
+            return View();
+        }
         public ActionResult Closeout()
         {
             return View();
