@@ -156,11 +156,7 @@
                                 </select>
                             </div>
                             <div class="col-md-2 input-group pull-left" style="margin-top: 48px;padding-right: 3.8%;" title="SHARE">
-                                <select class="col-md-2 form-control" id="AprrovalDdl">
-                                    <option value="" disabled selected hidden>SHARE</option>
-                                    <option value="1">SHARE-1</option>
-                                    <option value="2">SHARE-2</option>
-                                </select>
+                                <a class="col-md-2 form-control" id="AprrovalDdl" data-toggle="modal" data-target="#Contact" style="text-decoration: none !important;">SHARE &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-caret-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -231,11 +227,7 @@
                                 </select>
                             </div>
                             <div class="col-md-2 input-group pull-left" style="margin-top: 48px;padding-right: 3.8%;" title="SHARE">
-                                <select class="col-md-2 form-control" id="AprrovalDdl">
-                                    <option value="" disabled selected hidden>SHARE</option>
-                                    <option value="1">SHARE-1</option>
-                                    <option value="2">SHARE-2</option>
-                                </select>
+                                <a class="col-md-2 form-control" id="AprrovalDdl" data-toggle="modal" data-target="#Contact" style="text-decoration: none !important;">SHARE &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-caret-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -306,11 +298,7 @@
                                 </select>
                             </div>
                             <div class="col-md-2 input-group pull-left" style="margin-top: 48px;padding-right: 3.8%;" title="SHARE">
-                                <select class="col-md-2 form-control" id="AprrovalDdl">
-                                    <option value="" disabled selected hidden>SHARE</option>
-                                    <option value="1">SHARE-1</option>
-                                    <option value="2">SHARE-2</option>
-                                </select>
+                                <a class="col-md-2 form-control" id="AprrovalDdl" data-toggle="modal" data-target="#Contact" style="text-decoration: none !important;">SHARE &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-caret-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -319,89 +307,113 @@
         </div>
     </div>
 </div>
-
-
-@*<div class="main-section-content row" style="">
-        <div id="employee-details-wrapper">
-            <div id="employee-details" class="row">
-                <div id="budget-current">
-                    <span class="LblBlue">
-                        MY PROJECTS
-                    </span>
-                </div>
-                @{
-                    for (int i = 0; i < 8; i++)
-                    {
-                        <div class=" col-md-3 col-sm-4 col-xs-6">
-                            <div class="thumbnail">
-                                <p class="Status">STATUS: Final Amoritization</p>
-                                <p class="MainBlueLbl">Freedom Tmp WSA: Sewage Treatment Plant</p>
-                                <div class="ProjectsGraph col-md-12">
-                                    <p class="ProjectsGraphLbl">FUNDS AVAILABLE</p>
-                                    <span id="FundsAvailable" class="ProjectsGraphMainLbl">$62,032.97</span>
-                                    <div class="sparkline-container">
-                                        <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
-                                            <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                                <defs>
-                                                    <clipPath id="kdef31">
-                                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
-                                                    </clipPath>
-                                                </defs>
-                                                <g>
-                                                    <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="white"></path>
-                                                    <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
-                                                    </path>
-                                                    <g><g></g><g></g><g></g><g clip-path="url(#kdef31)"><g><g><g><path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path><path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path></g></g></g></g><g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g></g>
-                                                    <g></g>
-                                                </g>
-                                            </svg>
-                                        </div>
-
-                                    </div>
-                                    <p class="ProjectsGraphLbl">CONTRACT APPROVAL</p>
-                                    <span id="ContractApproval" class="ProjectsGraphMainLbl">11/13</span>
-                                    <div class="sparkline-container">
-                                        <div class="k-chart" id="EmployeeQuarterSales" style="height: 30px; position: relative;" data-role="chart">
-                                            <svg style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.34375px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                                                <defs>
-                                                    <clipPath id="kdef31">
-                                                        <path d="M5 5 L 331 5 331 20 5 20Z" stroke="#000" stroke-linejoin="miter" fill="none">
-                                                        </path>
-                                                    </clipPath>
-                                                </defs>
-                                                <g>
-                                                    <path d="M0 0 L 337 0 337 30 0 30Z" stroke="none" fill="white">
-                                                    </path>
-                                                    <path d="M5 5 L 331 5 331 20 5 20Z" stroke="none" fill="#fff" fill-opacity="0">
-                                                    </path>
-                                                    <g>
-                                                        <g></g>
-                                                        <g></g>
-                                                        <g></g>
-                                                        <g clip-path="url(#kdef31)">
-                                                            <g>
-                                                                <g>
-                                                                    <g>
-                                                                        <path d="M5.5 10.5 L 128.5 10.5 128.5 16.5 5.5 16.5Z" stroke="#8ebc00" stroke-width="1" stroke-opacity="1" fill="#8ebc00" fill-opacity="1"></path>
-                                                                        <path d="M308.625 5 L 310.625 5 310.625 20 308.625 20Z" stroke="green" stroke-width="0" stroke-opacity="1" fill="#ff0000" fill-opacity="1"></path>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                        <g><g><path d="M5.5 20.5 L 331.5 20.5" stroke="#c7c7c7" stroke-width="1" fill="none"></path></g></g>
-                                                    </g>
-                                                    <g></g>
-                                                </g>
-                                            </svg>
-                                        </div>
-
-                                    </div>
-                                </div>
+<div class="modal fade" id="Contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="    margin-right: 30px !important; margin-left: 270px !important;">
+        <div class="modal-content" style="width: 800px !important;">
+            <div class="modal-headers">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" style="height:600px">
+                <div id="employee-about">
+                    <div class="row" style="height:100%">
+                        <i class="icon fa fa-arrow-circle-down  Dashboard-Info" style="color:#e2d9d9; font-size:18px"><span class="ProjectsMainLbl">Freedom Township Water &amp; Sewer Authority: Sewage Treatment Plant</span></i>
+                        <div id="employeeBio" data-role="tooltip">
+                            <div class="col-md-12" style="overflow-x:auto;">
+                                <table class="col-md-12">
+                                    <tbody>
+                                        <tr class="col-md-5 Dashboard-Info">
+                                            <td>
+                                                <span class="info">ID:</span><span>07027021102-CS</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-7 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Company:</span><span> Freedom Water and Sewer Authority</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-5 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Loan:</span><span>72383</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-7 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Legal Entity:</span><span>Freedom Township</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-5 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Status:</span><span>Final Amoritization</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-7 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Business Pertner Number:</span><span>ABC01123</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-5 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Specialist:</span><span>Teresa Schlupp</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="col-md-7 Dashboard-Info">
+                                            <td>
+                                                <span class="info">Approval Date:</span><span>10/26/2011</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                    }
-                }
+                    </div>
+                </div>
+                <div class="container" style="max-width: 800px !important; margin-top: 2%;">
+                    <ul class="nav nav-tabs" style="width: 95%;">
+                        <li class="active"><a href="#" style="color:#c2bebe">CONTACTS</a></li>
+                        <li><a href="#"><i class="icon fa fa-bookmark"></i>SHARE POLICY</a></li>
+                        <li><a href="#"><i class="icon fa fa-user"></i>ROLES</a></li>
+                        <li><a href="#"><i class="icon fa fa-list-alt"></i>HOW TO</a></li>
+                    </ul>
+                    <br />
+                    <div style="overflow-x:auto;">
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th style="color:#c2bebe">CONTACT</th>
+                                    <th style="color:#c2bebe">ROLE</th>
+                                    <th style="color:#c2bebe">EMAIL</th>
+                                    <th style="color:#c2bebe">PHONE</th>
+                                    <th style="color:#c2bebe">EXT</th>
+                                    <th style="color:#c2bebe">PE#</th>
+                                    <th style="color:#c2bebe">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    for (int i = 0; i < 9; i++)
+                                    {
+                                        <tr>
+                                            <td style="color:#428bca; font-weight:bold">Kiana Tralongo</td>
+                                            <td>Project Specialist</td>
+                                            <td>pvclients2@hrg-inc.com</td>
+                                            <td>555-123-4567</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td><i class="icon fa  fa-trash"></i> <i class="icon fa fa-edit"></i></td>
+                                        </tr>
+                                    }
+                                }
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary pull-right" data-dismiss="modal">CANCLE</button>
+                </div>
             </div>
         </div>
-    </div>*@
-
+    </div>
+</div>

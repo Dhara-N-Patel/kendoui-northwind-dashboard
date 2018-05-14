@@ -9,8 +9,7 @@
     @Styles.Render("~/Content/kendo/css")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/kendo")
-
-
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
@@ -43,12 +42,11 @@
                         <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
                         <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
                         @*<li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>*@
-                        <li id="Inspections"><a href="@(Url.Action("Inspections", "Home"))"><i class="icon fas  fa fa-file"></i>Inspections</a></li>
+                        <li id="PaymentEstimates"><a href="@(Url.Action("PaymentEstimates", "Home"))"><i class="icon fas fa fa-file"></i>Payment Estimates</a></li>
+                        <li id="Inspections"><a href="@(Url.Action("Inspections", "Home"))"><i class="icon fas fa fa-eye"></i>Inspections</a></li>
                         <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
-                        <li id="PaymentEstimates"><a href="@(Url.Action("PaymentEstimates", "Home"))"><i class="icon fas  fa fa-file"></i>Payment Estimates</a></li>
-                        
                         <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>
-                        <li id="Resources"><a href="@(Url.Action("Resources", "Home"))"><i class="icon fas  fa fa-file"></i>Resources</a></li>
+                        <li id="Resources"><a href="@(Url.Action("Resources", "Home"))"><i class="icon fas  fa fa-book"></i>Resources</a></li>
                     </ul>
                     <div style="padding-top:70%">
                         <div id="SocialMedia" style="padding:10%">
