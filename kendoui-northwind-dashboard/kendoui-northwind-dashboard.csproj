@@ -3172,7 +3172,7 @@
     <Content Include="Views\Shared\EditorTemplates\Time.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Url.cshtml" />
     <Content Include="Views\Home\Contracts.cshtml" />
-    <Content Include="Views\Home\CostSheets.cshtml" />
+    <Content Include="Views\Home\PaymentEstimates.cshtml" />
     <Content Include="Views\Home\PaymentRequests.cshtml" />
     <Content Include="Views\Home\Closeout.cshtml" />
     <Content Include="Views\Home\Projects.cshtml" />

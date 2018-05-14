@@ -144,15 +144,25 @@ th, td {
     float: left;
     height: 1150px;
 }
-
-    #nav-section li {
-        border-bottom: 1px solid #4a4b51;
-        white-space: nowrap;
-        font-size: 11px;
-        line-height: 11px;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
+#nav-section1 {
+    background-color: #024578;
+    width: 280px;
+    float: left;
+  
+}
+.modal-headers {
+    min-height: 16.428571429px;
+    padding: 15px;
+    /* border-bottom: 1px solid #e5e5e5; */
+}
+#nav-section li {
+    border-bottom: 1px solid #779ab4;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 11px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
 
         #nav-section li a {
             color: white;
@@ -179,7 +189,11 @@ th, td {
 #sidebar-nav {
     padding: 0;
 }
-
+.ContractPopupText {
+    text-align: center;
+    margin-top: -10px;
+    color: #c2bebe;
+}
 #rights {
     position: absolute;
     /*bottom: 10px;*/
@@ -262,7 +276,9 @@ th, td {
     padding: 30px;
     text-align: right;
 }
-
+#dateFilter1 {
+    text-align: right;
+}
 #employee-list,
 #employee-details-wrapper {
     /*padding: 20px;*/
@@ -400,7 +416,7 @@ th, td {
 }
 
 input[type = "search"] {
-    border-radius: 5px;
+    /*border-radius: 5%;*/
     height: 30px;
     width: 400px;
     font-family: FontAwesome;
@@ -415,7 +431,7 @@ input[type = "search"] {
 .LblBlue {
     font-size: 14px;
     display: inline-block;
-    color: #024578;
+    color: #2854e4;
     margin:2%;
 }
 
@@ -489,6 +505,8 @@ input[type = "search"] {
     }
 
 .period-wrapper {
+    width:78%;
+    padding-top: 30px;
     display: inline-block;
 }
 
@@ -505,6 +523,7 @@ tr.spaceUnder > td {
 
 .Status {
     float: left;
+    display: inline-block;
     margin: 0px 0px 10px -40px;
     background-color: #6abd2d;
     color: white;
@@ -517,17 +536,21 @@ tr.spaceUnder > td {
 }
 .thumbnail {
     border: 1px solid #888888;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     box-shadow: 1px 1px 1px 1px #888888;
     height: 300px !important;
-    /*position: relative;
-    top: 15px;
-    bottom: 0;
-    left: 15px;
-    right: 0;
-    height: 300px;
-    text-align: center;
-    padding-top: 10%;*/
+}
+.parent {
+    border-radius:1%;
+    border: 1px solid #888888;
+    padding: 10px 10px 0px 0px;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.child {
+    padding-left:0px !important;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 /* Kendo widgets */
@@ -620,11 +643,13 @@ tr.spaceUnder > td {
 }
 
 .product-name {
-    font-size: 14px;
+    text-align:center;
+    font-size: 28px;
+    color:#6abd2d;
 }
 
 .modal-body {
-    height: 200px;
+    height: 250px;
 }
 
 .product-category {
@@ -791,6 +816,9 @@ tr.spaceUnder > td {
     .ProjectsGraph {
         padding: 0px 60px 0px 30px;
     }
+    .parent {
+        width: 89%;
+    }
     .thumbnail {
         width: 90%;
         height: 340px;
@@ -929,6 +957,7 @@ tr.spaceUnder > td {
         }
 
         .period-wrapper {
+            width: 100%;
             margin: 5px auto;
         }
     }
@@ -1093,6 +1122,46 @@ tr.spaceUnder > td {
         display: block;
     }
 }
+.checkbox {
+    /*margin: 0 0 1em 2em;*/
+}
 
+    .checkbox .tag {
+        margin-top: 2%;
+        padding-left: 6%;
+        color: #595959;
+        display: block;
+        float: left;
+        position: relative;
+        width: 120px;
+    }
 
+    .checkbox label {
+        display: inline;
+    }
 
+    .checkbox .input-assumpte {
+        display: none;
+    }
+
+.input-assumpte + label {
+    -webkit-appearance: none;
+    border-radius: 20%;
+    background-color: #fafafa;
+    border: 1px solid #6abd2d;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-assumpte:checked + label:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #6abd2d;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+}

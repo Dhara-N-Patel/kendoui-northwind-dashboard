@@ -41,7 +41,7 @@ namespace KendoUI.Northwind.Dashboard.Controllers
         {
             return View();
         }
-        public ActionResult CostSheets()
+        public ActionResult PaymentEstimates()
         {
             return View();
         }

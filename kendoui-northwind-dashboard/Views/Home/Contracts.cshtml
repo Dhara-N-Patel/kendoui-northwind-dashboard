@@ -152,39 +152,43 @@
     <div class="modal-dialog">
         <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-headers">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">APPROVE/DENY</h4>
             </div>
             <div class="modal-body" style="text-align:center;">
                 <table class="col-md-12">
-                    <tr class="spaceUnder">
-                        <td></td>
-                        <td class="product-name"> ABC Construction:&ensp;&ensp;	$199,842,329.00</td>
-                        <td></td>
-                    </tr>
-                    <tr class="spaceUnder">
-                        <td class="col-md-2"></td>
-                        <td class="col-md-8 input-group">
-                            <select class="col-md-2 form-control" id="AprrovalDdl">
-                                <option value="1">Yes, I approve</option>
-                                <option value="2">I Deny</option>
-                            </select>
-                        </td>
-                        <td class="col-md-2"></td>
-                    </tr>
                     <tr>
-                        <td class="col-md-2"></td>
-                        <td class="col-md-8 input-group">
-                            <textarea class="form-control" rows="5" placeholder="Reason" required></textarea>
+                        <td class="product-name"> $199,842,329.00</td>
+                    </tr>
+                    <tr class="spaceUnder">
+                        <td>
+                            <p class="ContractPopupText">PENNVEST FUNDING</p>
                         </td>
-                        <td class="col-md-2"></td>
+                    </tr>
+                    <tr class="col-md-12"style="margin-top:20px"></tr>
+                    <tr>
+                        <td>
+                            <p class="ContractPopupText">Other Funding Source: $0.00</p><br />
+                             <p class="ContractPopupText"> Hold Back: $0.00</p><br />
+                             <p class="ContractPopupText">Total Disbursement: $564,126.00</p>
+                         </td>
+                    </tr>
+                    <tr class="col-md-12" style="margin-top:20px"></tr>
+                    <tr>
+                        <td>
+                            <p class="ContractPopupText">
+                                By completing the action you acknowledge that you have taken every necessary step.
+                            </p>
+                        </td>
                     </tr>
                 </table>
             </div>
             <div class="modal-footer">
-                <div class="col-md-9">
-                    <button type="button" class="btnPopup btn btn-primary pull-right" data-dismiss="modal">I APPROVE</button>
+                <div class="col-md-6">
+                    <button type="button" class="btnPopup btn btn-primary pull-left" data-dismiss="modal">CANCLE</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btnPopup btn btn-primary pull-right" data-dismiss="modal">APPROVE</button>
                 </div>
             </div>
         </div>

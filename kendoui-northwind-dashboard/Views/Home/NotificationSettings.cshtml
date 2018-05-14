@@ -2,3 +2,67 @@
     ViewBag.Title = "Pennvest - Notification Settings";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="main-section-content row">
+    <div id="employee-details-wrapper">
+        <div id="employee-details" class="row">
+            <div id="budget-current">
+                <span class="LblBlue">
+                    NOTIFICATION SETTINGS
+                </span>
+                <div>
+                    <p style="color:#c2bebe; margin:2%">DECIDE WHICH EMAILS YOU RECEIVE</p>
+                </div>
+                <p style="margin:2%">
+                    Stay up-to-date on project status’, notifications, and updates that immediately affect your project.<br />
+                    (If you are the primary contact for a product, opt-out is not recommended.)
+                </p>
+                <table>
+                    <tr class="checkbox">
+                        <td class="col-md-2">
+                            <div class="tag pull-right">Other Application</div>
+                            <input type="checkbox" class="input-assumpte" id="Other Application">
+                            <label for="Other Application"></label>
+                        </td>
+                    </tr>
+                    <tr class="checkbox">
+                        <td class="col-md-2">
+                            <div class="tag pull-right">Funds Disbursement</div>
+                            <input type="checkbox" class="input-assumpte" id="FundsDisbursement">
+                            <label for="FundsDisbursement"></label>
+                        </td>
+                    </tr>
+                    <tr class="checkbox">
+                        <td class="col-md-2">
+                            <div class="tag pull-right">Other Application</div>
+                            <input type="checkbox" class="input-assumpte" id="OtherApplication1">
+                            <label for="OtherApplication1"></label>
+                        </td>
+                    </tr>
+                    <tr class="checkbox">
+                        <td class="col-md-2">
+                            <div class="tag pull-right">Other Application</div>
+                            <input type="checkbox" class="input-assumpte" id="OtherApplication2">
+                            <label for="OtherApplication2"></label>
+                        </td>
+                    </tr>
+                    <tr class="checkbox">
+                        <td class="col-md-2">
+                            <div class="tag pull-right">Other Application</div>
+                            <input type="checkbox" class="input-assumpte" id="OtherApplication3">
+                            <label for="OtherApplication3"></label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="margin:2%;">
+            <hr />
+            <input type="radio" id="Unsuscribe" name="contact" value="Unsuscribe" style="width:20px;height: 2em;">
+            <p style="margin-top:-2%; margin-left: 3%;">Unsubscribe from all mailing lists</p>
+        </div>
+        <div style="margin:2%;">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">UPDATE MY EMAIL PREFERENCES</button>
+        </div>
+    </div>
+</div>
+
