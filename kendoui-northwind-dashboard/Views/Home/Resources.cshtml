@@ -119,34 +119,44 @@
                     </div>
                 </div>
                 <div class="budget-current">
-                    <div class="col-md-12 input-group pull-left">
-                        <select class="col-md-2 form-control" id="Templates">
-                            <option value="" disabled selected hidden>TEMPLATES</option>
-                            <option value="1">TEMPLATES-1</option>
-                            <option value="2">TEMPLATES-2</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12 input-group pull-left">
-                        <select class="col-md-2 form-control" id="CostSheets">
-                            <option value="" disabled selected hidden>COST SHEETS</option>
-                            <option value="1">COST SHEETS-1</option>
-                            <option value="2">COST SHEETS-2</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12 input-group pull-left">
-                        <select class="col-md-2 form-control" id="CurrentBudget">
-                            <option value="" disabled selected hidden>CURRENT BUDGET</option>
-                            <option value="1">CURRENT BUDGET-1</option>
-                            <option value="2">CURRENT BUDGET-2</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12 input-group pull-left" style="margin-bottom:2%">
-                        <select class="col-md-2 form-control" id="ContractDocuments">
-                            <option class="CostCategoryBlueLbl" value="" disabled selected hidden>CONTRACT DOCUMENTS</option>
-                            <option value="1">CONTRACT DOCUMENTS-1</option>
-                            <option value="2">CONTRACT DOCUMENTS-2</option>
-                        </select>
-                    </div>
+                    <ul class="panelbar">
+                        <li>
+                            TEMPLATES
+                            <ul>
+                                <li>TEMPLATES 1</li>
+                                <li>TEMPLATES 2</li>
+                                <li>TEMPLATES 3</li>
+                                <li>TEMPLATES 4</li>
+                            </ul>
+                        </li>
+                        <li>
+                            COST SHEETS
+                            <ul>
+                                <li>COST SHEETS 1</li>
+                                <li>COST SHEETS 2</li>
+                                <li>COST SHEETS 3</li>
+                                <li>COST SHEETS 4</li>
+                            </ul>
+                        </li>
+                        <li>
+                            CURRENT BUDGET
+                            <ul>
+                                <li>CURRENT BUDGET 1</li>
+                                <li>CURRENT BUDGET 2</li>
+                                <li>CURRENT BUDGET 3</li>
+                                <li>CURRENT BUDGET 4</li>
+                            </ul>
+                        </li>
+                        <li>
+                            CONTRACT DOCUMENTS
+                            <ul>
+                                <li>CONTRACT DOCUMENTS 1</li>
+                                <li>CONTRACT DOCUMENTS 2</li>
+                                <li>CONTRACT DOCUMENTS 3</li>
+                                <li>CONTRACT DOCUMENTS 4</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div id="employee-details-wrapper">
@@ -192,21 +202,28 @@
                     <div id="employee-details-wrapper">
                         <div id="employee-details" class="row">
                             <div class="budget-current">
-                                <div class="col-md-12 input-group pull-left">
-                                    <select class="col-md-2 form-control" id="PaymentRequestDocs">
-                                        <option class="CostCategoryBlueLbl"value="" disabled selected hidden>PAYMENT REQUEST DOCUMENTS</option>
-                                        <option value="1">PAYMENT REQUEST DOCUMENTS-1</option>
-                                        <option value="2">PAYMENT REQUEST DOCUMENTS-2</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-12 input-group pull-left" style="margin-bottom:2%">
-                                    <select class="col-md-2 form-control" id="CloseoutDocs">
-                                        <option class="CostCategoryBlueLbl" value="" disabled selected hidden>CLOSEOUT DOCUMENTS</option>
-                                        <option value="1">CLOSEOUT DOCUMENTS-1</option>
-                                        <option value="2">CLOSEOUT DOCUMENTS-2</option>
-                                    </select>
-                                </div>
+                                <ul class="panelbar">
+                                    <li>
+                                        PAYMENT REQUEST DOCUMENTS
+                                        <ul>
+                                            <li>PAYMENT REQUEST DOCUMENTS 1</li>
+                                            <li>PAYMENT REQUEST DOCUMENTS 2</li>
+                                            <li>PAYMENT REQUEST DOCUMENTS 3</li>
+                                            <li>PAYMENT REQUEST DOCUMENTS 4</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        CLOSEOUT DOCUMENTS
+                                        <ul>
+                                            <li>CLOSEOUT DOCUMENTS 1</li>
+                                            <li>CLOSEOUT DOCUMENTS 2</li>
+                                            <li>CLOSEOUT DOCUMENTS 3</li>
+                                            <li>CLOSEOUT DOCUMENTS 4</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -256,4 +273,85 @@
         </div>
     </div>
 </div>
+        <script>
+                 $(document).ready(function() {
+                    var getItem = function (target) {
+                            var itemIndexes = target.val().split(/[.,]/),
+                                rootItem = panelBar.element.children("li").eq(itemIndexes[0]);
 
+                            return itemIndexes.length > 1 ?
+                                rootItem.find(".k-group > .k-item").eq(itemIndexes[1]) :
+                                rootItem;
+                        },
+                        select = function (e) {
+                            if (e.type != "keypress" || kendo.keys.ENTER == e.keyCode)
+                                panelBar.select(getItem($("#selectIndex")));
+                        },
+                        append = function (e) {
+                            if (e.type != "keypress" || kendo.keys.ENTER == e.keyCode)
+                                panelBar.append({
+                                        text: $("#appendText").val()
+                                    }, panelBar.select());
+                        },
+                        before = function (e) {
+                            if (e.type != "keypress" || kendo.keys.ENTER == e.keyCode)
+                                panelBar.insertBefore({
+                                    text: $("#beforeText").val()
+                                }, panelBar.select());
+                        },
+                        after = function (e) {
+                            if (e.type != "keypress" || kendo.keys.ENTER == e.keyCode)
+                                panelBar.insertAfter({
+                                    text: $("#afterText").val()
+                                }, panelBar.select());
+                        };
+
+                    $(".selectItem").click(select);
+                    $("#selectIndex").keypress(select);
+
+                    $(".appendItem").click(append);
+                    $("#appendText").keypress(append);
+
+                    $(".beforeItem").click(before);
+                    $("#beforeText").keypress(before);
+
+                    $(".afterItem").click(after);
+                    $("#afterText").keypress(after);
+
+                    $(".toggleItem").click(function (e) {
+                        var item = panelBar.select();
+                        panelBar.enable(item, item.hasClass("k-state-disabled"));
+                    });
+
+                    $(".triggerItem").click(function (e) {
+                        var item = panelBar.select();
+
+                        if (item.hasClass("k-state-active")) {
+                            panelBar.collapse(item);
+                        } else {
+                            panelBar.expand(item);
+                        }
+                    });
+
+                    $(".removeItem").click(function (e) {
+                        panelBar.remove(panelBar.select());
+                    });
+
+                });
+            var panelBar = $(".panelbar").kendoPanelBar().data("kendoPanelBar");
+
+        </script>
+        <style>
+            .box-col {
+                width: 250px;
+                margin-bottom: -20px;
+            }
+
+                .box-col .options {
+                    margin-bottom: 20px;
+                }
+
+            .box .k-textbox {
+                width: 80px;
+            }
+        </style>
