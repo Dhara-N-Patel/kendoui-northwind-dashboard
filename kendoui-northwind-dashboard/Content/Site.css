@@ -841,7 +841,10 @@ tr.spaceUnder > td {
 
 /*max-width: 768px -> .col-xs- */
 @media screen and (max-width: 768px) {
-    .thumbnail {
+    .modal-dialog {
+        left:0% !important;
+    }
+        .thumbnail {
         height: 1100px !important;
     }
      #SocialMedia {
