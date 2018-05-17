@@ -25,121 +25,124 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="CostCategoryLbl">Administrative Costs </td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="AdministrativeCosts1">Administrative Costs </td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
                             </tr>
-                            <tr>
-                                <td class="CostCategoryLbl">Legal Fees</td>
-                                <td class="FundingLbl">$12,542,329.00</td>
-                                <td class="FundingLbl">$77,293.00</td>
-                                <td class="FundingLbl">$199,842,329.00</td>
-                                <td class="FundingLbl">$1,976.00</td>
-                            </tr>
-                            <tr>
-                                <td class="CostCategoryLbl">Financing/Accounting Changes</td>
-                                <td class="FundingLbl">$12,542,329.00</td>
-                                <td class="FundingLbl">$77,293.00</td>
-                                <td class="FundingLbl">$199,842,329.00</td>
-                                <td class="FundingLbl">$1,976.00</td>
-                            </tr>
-                            <tr>
-                                <td class="CostCategoryLbl">Interest During Construction</td>
-                                <td class="FundingLbl">$12,542,329.00</td>
-                                <td class="FundingLbl">$77,293.00</td>
-                                <td class="FundingLbl">$199,842,329.00</td>
-                                <td class="FundingLbl">$1,976.00</td>
-                            </tr>
-                            <tr>
-                                <td class="CostCategoryLbl">Architecture Engineering Fees</td>
-                                <td class="FundingLbl">$12,542,329.00</td>
-                                <td class="FundingLbl">$77,293.00</td>
-                                <td class="FundingLbl">$199,842,329.00</td>
-                                <td class="FundingLbl">$1,976.00</td>
-                            </tr>
-                            <tr>
+                            <tr id="AdministrativeCosts" style="display:none">
                                 <td colspan="12">
-                                    <table class="nestedTable">
-                                        <tr>
-                                            <td>CONTRACT NAME</td>
-                                            <td>VENDOR NAME</td>
-                                            <td>PENNVEST</td>
-                                            <td>OTHER SOURCES</td>
-                                            <td>TOTAL</td>
-                                            <td>APPROVAL</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="CostCategoryLbl">ABC Construction </td>
-                                            <td class="FundingLbl">ABC Construction, Inc</td>
-                                            <td class="FundingLbl">$199,842,329.00</td>
-                                            <td class="FundingLbl">$241,976.00</td>
-                                            <td class="FundingLbl">$235,450,491.00</td>
-                                            <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="CostCategoryLbl">XYZ Electrical</td>
-                                            <td class="FundingLbl">XYZ Electrical Corporation</td>
-                                            <td class="FundingLbl">$199,842,329.00</td>
-                                            <td class="FundingLbl">$241,976.00</td>
-                                            <td class="FundingLbl">$235,450,491.00</td>
-                                            <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="CostCategoryLbl">123 Plumbing </td>
-                                            <td class="FundingLbl">123 Plumbing Corp</td>
-                                            <td class="FundingLbl">$199,842,329.00</td>
-                                            <td class="FundingLbl">$241,976.00</td>
-                                            <td class="FundingLbl">$235,450,491.00</td>
-                                            <td> <a data-toggle="modal" data-target="#Approve" class="btn btn-primary"> REVIEW</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td class="blueBoldLbl">$199,842,329.00</td>
-                                            <td class="blueBoldLbl">$235,450,491.00</td>
-                                            <td class="blueBoldLbl">$241,976.00</td>
-                                            <td></td>
-                                        </tr>
-
-                                    </table>
+                                    @Html.Partial("_ContractInfo")
                                 </td>
                             </tr>
                             <tr>
-                                <td class="CostCategoryLbl">Permits</td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="LegalFees1" >Legal Fees</td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
                             </tr>
+                            <tr id="LegalFees" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
                             <tr>
-                                <td class="CostCategoryLbl">Land</td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="AccountingChanges1"> Financing/Accounting Changes</td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
                             </tr>
+                            <tr id="AccountingChanges" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
                             <tr>
-                                <td class="CostCategoryLbl">Construction</td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="InterestDuringConstruction1">Interest During Construction</td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
                             </tr>
+                            <tr id="InterestDuringConstruction" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
                             <tr>
-                                <td class="CostCategoryLbl">Contingency</td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="ArchitectureEngineeringFees1">Architecture Engineering Fees</td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
                             </tr>
+                            <tr id="ArchitectureEngineeringFees" style="display:none">
+                                <td colspan="12">
+                                   @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
                             <tr>
-                                <td class="CostCategoryLbl">Other</td>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="Permits1">Permits</td>
                                 <td class="FundingLbl">$12,542,329.00</td>
                                 <td class="FundingLbl">$77,293.00</td>
                                 <td class="FundingLbl">$199,842,329.00</td>
                                 <td class="FundingLbl">$1,976.00</td>
+                            </tr>
+                            <tr id="Permits" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="Land1">Land</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                            </tr>
+                            <tr id="Land" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="Construction1">Construction</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                            </tr>
+                            <tr id="Construction" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="Contingency1">Contingency</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                            </tr>
+                            <tr id="Contingency" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="CostCategoryLbl" style="text-decoration:underline" id="Other1">Other</td>
+                                <td class="FundingLbl">$12,542,329.00</td>
+                                <td class="FundingLbl">$77,293.00</td>
+                                <td class="FundingLbl">$199,842,329.00</td>
+                                <td class="FundingLbl">$1,976.00</td>
+                            </tr>
+                            <tr id="Other" style="display:none">
+                                <td colspan="12">
+                                    @Html.Partial("_ContractInfo")
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -153,7 +156,7 @@
         <div class="modal-content">
 
             <div class="modal-headers">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="border-radius:0px !important;">&times;</button>
             </div>
             <div class="modal-body" style="text-align:center;">
                 <table class="col-md-12">
@@ -185,15 +188,16 @@
             </div>
             <div class="modal-footer">
                 <div class="col-md-6">
-                    <button type="button" class="btnPopup btn btn-primary pull-left" data-dismiss="modal">CANCLE</button>
+                    <button type="button" class="btnPopup btn btn-primary pull-left" style="border-radius:0px !important;"data-dismiss="modal">CANCLE</button>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btnPopup btn btn-primary pull-right" data-dismiss="modal">APPROVE</button>
+                    <button type="button" class="btnPopup btn btn-primary pull-right" style="border-radius:0px !important;" data-dismiss="modal">APPROVE</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="~/Scripts/Contracts.js"></script>
 
 
 
