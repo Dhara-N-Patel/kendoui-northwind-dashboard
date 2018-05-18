@@ -3,94 +3,94 @@
     ViewBag.Title = "Pennvest - Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div id="Employees-List" class="col-xs-1 column">
 
-<div class="main-section-content row" style="">
-    <div id="Employees-List" class="col-xs-1 column">
-        <a href="@(Url.Action("NotificationSettings", "Home"))" class="pull-right clickable"><i class="fa fa-gear" style="color:white; font-size:16px" title="Notification Settings"></i></a>
-        @*<i class="fa fa-gear pull-right" style="color:white; font-size:16px"></i>*@
-        <h3 style="color:white"><b>NOTIFICATIONS</b></h3>
-        <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
-            <ul class="nav">
-                @{
-                    for (int i = 0; i < 3; i++)
-                    {
+    @*<i class="fa fa-gear pull-right" style="color:white; font-size:16px"></i>*@
+    <h3 style="color:white; margin-top: 8px;">NOTIFICATIONS</h3>
+    <div class="collapse navbar-collapse" style="padding:0" role="navigation">
+        <ul class="nav">
+            @{
+                for (int i = 0; i < 3; i++)
+                {
+                    <li class="employee" aria-selected="false">
+                        <div style="padding: 0.50em;">
+                            <dl class="employee-list-details" style="margin-top: 2px;">
+                                <dt class="name"><b>Payment Request</b></dt>
+                                <dd class="title">@System.DateTime.Now</dd>
+                            </dl>
+                        </div>
+                    </li>
                         <li class="employee" aria-selected="false">
-                            <div class="employee-wrapper">
-                                <dl class="employee-list-details">
-                                    <dt class="name"><b>Payment Request</b></dt>
-                                    <dd class="title">@System.DateTime.Now</dd>
-                                </dl>
-                            </div>
-                        </li>
-                        <li class="employee" aria-selected="false">
-                            <div class="employee-wrapper">
-                                <dl class="employee-list-details">
+                            <div style="padding: 0.50em;">
+                                <dl class="employee-list-details" style="margin-top: 2px;">
                                     <dt class="name"><b>Change Order</b></dt>
                                     <dd class="title">@System.DateTime.Now</dd>
                                 </dl>
                             </div>
                         </li>
                         <li class="employee" aria-selected="false">
-                            <div class="employee-wrapper">
-                                <dl class="employee-list-details">
+                            <div style="padding: 0.50em;">
+                                <dl class="employee-list-details" style="margin-top: 2px;">
                                     <dt class="name"><b>Submit Cost Sheet</b></dt>
                                     <dd class="title">@System.DateTime.Now</dd>
                                 </dl>
                             </div>
                         </li>
-                    }
                 }
-            </ul>
-        </div>
-
+            }
+        </ul>
     </div>
 
+</div>
+
+<div class="main-section-content row" style="">
     <div id="employee-details-wrapper">
         <div id="employee-details" class="row">
             <div id="employee-about">
+                <i class="icon fa fa-arrow-circle-down  Dashboard-Info" style="color:#e2d9d9; font-size:18px;"><span class="MainLbl" colspan="12">Freedom Township Water &amp; Sewer Authority: Sewage Treatment Plant</span></i>
                 <div class="row" style="height:100%">
-                    <h4 class="MainLbl">Freedom Township Water & Sewer Authority: Sewage Treatment Plant</h4>
+                    @*<h4 class="MainLbl">Freedom Township Water & Sewer Authority: Sewage Treatment Plant</h4>*@
                     <div id="employeeBio"  data-role="tooltip">
                         <div class="col-md-8" style="overflow-x:auto;">
-                            <table class="col-md-12">
+                            <table class="col-md-12 ">
                                 <tr class="col-md-5 Dashboard-Info">
                                     <td>
-                                        <span class="info">ID:</span><span>07027021102-CS</span>
+                                        <span class="info">ID:</span><span>&ensp;&ensp;07027021102-CS</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-7 Dashboard-Info">
                                     <td>
-                                        <span class="info">Company:</span><span> Freedom Water and Sewer Authority</span>
+                                        <span class="info">Company:</span><span>&ensp;Freedom Water and Sewer Authority</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-5 Dashboard-Info">
                                     <td>
-                                        <span class="info">Loan:</span><span>72383</span>
+                                        <span class="info">Loan:</span><span>&ensp;&ensp;72383</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-7 Dashboard-Info">
                                     <td>
-                                        <span class="info">Legal Entity:</span><span>Freedom Township</span>
+                                        <span class="info">Legal Entity:</span><span>&ensp;&ensp;Freedom Township</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-5 Dashboard-Info">
                                     <td>
-                                        <span class="info">Status:</span><span>Final Amoritization</span>
+                                        <span class="info">Status:</span><span>&ensp;&ensp;Final Amoritization</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-7 Dashboard-Info">
                                     <td>
-                                        <span class="info">Business Pertner Number:</span><span>ABC01123</span>
+                                        <span class="info">Business Pertner Number:</span><span>&ensp;&ensp;ABC01123</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-5 Dashboard-Info">
                                     <td>
-                                        <span class="info">Specialist:</span><span>Teresa Schlupp</span>
+                                        <span class="info">Specialist:</span><span>&ensp;&ensp;Teresa Schlupp</span>
                                     </td>
                                 </tr>
                                 <tr class="col-md-7 Dashboard-Info">
                                     <td>
-                                        <span class="info">Approval Date:</span><span>10/26/2011</span>
+                                        <span class="info">Approval Date:</span><span>&ensp;&ensp;10/26/2011</span>
                                     </td>
                                 </tr>
                             </table>

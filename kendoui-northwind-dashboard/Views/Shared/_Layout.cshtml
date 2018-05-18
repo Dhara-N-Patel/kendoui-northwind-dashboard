@@ -9,7 +9,7 @@
     @Styles.Render("~/Content/kendo/css")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/kendo")
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/kendo.modernizr.custom.js")"></script>
@@ -38,7 +38,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
                     <ul class="nav">
-                        <li id="Dashboard"><a href="@(Url.Action("Projects", "Home"))"><span class="icon fa fa-home"></span>Projects</a></li>
+                        <li id="Projects"><a href="@(Url.Action("Projects", "Home"))"><span class="icon fa fa-home"></span>Projects</a></li>
                         <li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><i class="icon fa fa-home"></i>Dashboard</a></li>
                         <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
                         <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon fa fa-file"></span>Contracts</a></li>
@@ -51,45 +51,40 @@
                     </ul>
                     <div style="padding-top:70%">
                         <div id="SocialMedia" style="padding:10%">
-                            <i class="fa fa-facebook-square" style="color:#e2d9d9; padding-left:15%; font-size:30px"></i>
-                            <i class="fa fa-google-plus-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-linkedin-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-twitter-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-youtube-square" style="color:#e2d9d9; font-size:30px"></i>
+                            <i class="fa fa-facebook-square SocialMediaIcons"></i>
+                            <i class="fa fa-google-plus-square SocialMediaIcons"></i>
+                            <i class="fa fa-linkedin-square SocialMediaIcons"></i>
+                            <i class="fa fa-twitter-square SocialMediaIcons"></i>
+                            <i class="fa fa-youtube-square SocialMediaIcons"></i>
                         </div>
                         <div id="rights">
                             <p style="text-align:center;">
                                 &copy;2018, Commonwealth of Pennsylvania.
                                 <br />All Rights Reserved.
-                                <br /> <span style="text-decoration:underline">Privacy</span> .
+                                <br /> <span style="text-decoration:underline">Privacy</span>
                                 <span style="text-decoration:underline">Security Statement</span>
                             </p>
                         </div>
-                     </div>
                     </div>
+                </div>
             </div><!--close left column-->
 
             <div id="main-section" class="col-xs-12 column">
                 <div id="main-section-header" class="row">
                     <div id="dateFilter" class="col-md-12">
-                        <a href="#"><i id="bar" class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left"></i></a>
+                        <a href="#" ><i id="bar" class="icon fa fa-bars"></i></a>
                         <div class="period-wrapper">
                             <input type="search" placeholder="&#xf002 Search">
                             &nbsp;&nbsp;
-                            <i class="icon fa fa-cog" style="color:#e2d9d9; font-size:16px"></i>
+                            <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="fa fa-cog" style="color:#e2d9d9; font-size:16px"></i></a>
                             <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
                         </div>
                         <p class="AdminLbl">Administrator</p>
                     </div>
                     <div id="dateFilter1" style="display:none;">
-                        <div id="nav-section1" class="column">
-                            <div class="navbar-default">
-                                <h1> <img id="dash-logo" src="~/Content/images/Pennvestlogo.png" style="width:100%; padding:4% 15% 4% 15%;" /></h1>
-                            </div>
-                        </div>
+                        <a href="#"><i id="bar1" class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left; padding-top: 15px;"></i></a>
                         <div class="period-wrapper">
-                            <a href="#"><i id="bar1" class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left"></i></a>
-                            <input type="search" placeholder="&#xf002 Search">
+                            <input type="text" placeholder="&#xf002 Search">
                             &nbsp;&nbsp;
                             <i class="icon fa fa-cog" style="color:#e2d9d9; font-size:16px"></i>
                             <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
@@ -106,7 +101,7 @@
                     <tr>
                         <td style="color:white">
                             &copy;2018, Commonwealth of Pennsylvania, All Rights Reserved.
-                            <span style="text-decoration:underline">Privacy</span> .
+                            <span style="text-decoration:underline">Privacy</span>
                             <span style="text-decoration:underline">Security Statement</span>
                         </td>
                         <td class="pull-right">
@@ -140,7 +135,7 @@
             $('#dateFilter1').hide();
             $('#footer').hide();
         });
-        
+
     </script>
 </body>
 </html>
