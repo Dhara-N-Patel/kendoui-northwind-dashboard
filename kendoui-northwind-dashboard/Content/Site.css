@@ -14,6 +14,12 @@ body {
     line-height: 1;
     font-size: 12px;
 }
+.panelbar{
+    background-color:white !important;
+}
+.k-header {
+    background-color: white !important;
+}
 
 ol, ul {
     list-style: none;
@@ -1228,6 +1234,13 @@ tr.spaceUnder > td {
     top: 0px;
 }
 /*Accordian*/
+
+.accordian:hover > span {
+    background-color: #6abd2d !important;
+}
+    .accordian:hover > span > span {
+        color: white !important;
+    }
 
 .box-col {
     width: 250px;

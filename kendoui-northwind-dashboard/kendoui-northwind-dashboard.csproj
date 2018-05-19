@@ -392,7 +392,10 @@
     <Content Include="Content\fontawesome-all.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
+    <Content Include="Content\images\file-alt.png" />
+    <Content Include="Content\images\file-medical-alt.png" />
     <Content Include="Content\images\Pennvestlogo.png" />
+    <Content Include="Content\images\Warehouse.png" />
     <Content Include="Content\Kendo\Black\editor.png" />
     <Content Include="Content\Kendo\Black\imagebrowser.png" />
     <Content Include="Content\Kendo\Black\indeterminate.gif" />
