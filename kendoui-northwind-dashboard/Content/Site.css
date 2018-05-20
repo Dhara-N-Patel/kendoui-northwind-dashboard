@@ -591,9 +591,15 @@ tr.spaceUnder > td {
 
 .parent {
     border-radius: 1%;
-    border: 1px solid #888888;
     padding: 10px 10px 0px 0px;
-    box-shadow: 1px 1px 1px 1px #888888;
+    border: 1px solid transparent;
+    -webkit-transition: border 0.1s linear, box-shadow 0.1s linear;
+    -moz-transition: border 0.1s linear, box-shadow 0.1s linear;
+    transition: border 0.1s linear, box-shadow 0.1s linear;
+    border-color: gainsboro;
+    -webkit-box-shadow: 0 0 5px gray;
+    -moz-box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px gray;
 }
 
 .child {
