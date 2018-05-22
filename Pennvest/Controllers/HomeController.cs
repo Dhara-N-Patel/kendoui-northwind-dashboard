@@ -7,7 +7,7 @@ using Kendo.Mvc.Extensions;
 using System.Collections;
 
 
-namespace KendoUI.Northwind.Dashboard.Controllers
+namespace Pennvest.Controllers
 {
     public class HomeController : Controller
     {

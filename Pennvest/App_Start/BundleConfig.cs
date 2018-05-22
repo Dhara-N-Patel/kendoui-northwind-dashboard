@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace kendoui_northwind_dashboard
+namespace Pennvest
 {
     public class BundleConfig
     {
