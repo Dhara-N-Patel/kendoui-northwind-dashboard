@@ -38,24 +38,28 @@
                 </div>
                 <div class="collapse navbar-collapse" id="sidebar-nav" role="navigation">
                     <ul class="nav">
-                        <li id="Projects"><a href="@(Url.Action("Projects", "Home"))"><span class="icon fa fa-home"></span>Projects</a></li>
-                        <li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><img class="icon" style="height: 12px;" src="~/Content/images/Warehouse.png">Dashboard</a></li>
-                        <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon fa fa-dollar"></span>Budget</a></li>
-                        <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><img class="icon" style="height: 16px;" src="~/Content/images/file-alt.png">Contracts</a></li>
-                        @*<li id="Settlement"><a href="@(Url.Action("Settlement", "Home"))"><span class="icon fa fa-tachometer"></span>Settlement</a></li>*@
-                        <li id="PaymentEstimates"><a href="@(Url.Action("PaymentEstimates", "Home"))"><img class="icon" style="height: 16px;" src="~/Content/images/file-medical-alt.png">Payment Estimates</a></li>
-                        <li id="Inspections"><a href="@(Url.Action("Inspections", "Home"))"><i class="icon fas fa fa-eye"></i>Inspections</a></li>
-                        <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon fa fa-inbox"></span>Payment Requests</a></li>
-                        <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon fa fa-sign-out"></span>Closeout</a></li>
-                        <li id="Resources"><a href="@(Url.Action("Resources", "Home"))"><i class="icon fas  fa fa-book"></i>Resources</a></li>
+                        <li id="Projects"><a href="@(Url.Action("Projects", "Home"))"><span class="icon km-icon km-home"></span>Projects</a></li>
+                        <li id="Dashboard"><a href="@(Url.Action("Dashboard", "Home"))"><span class="icon k-icon k-i-toggle-full-screen-mode"></span>Dashboard</a></li>
+                        <li id="Budget"><a href="@(Url.Action("Budget", "Home"))"><span class="icon k-icon k-i-dollar"></span>Budget</a></li>
+                        <li id="Contracts"><a href="@(Url.Action("Contracts", "Home"))"><span class="icon k-icon k-i-file-txt"></span>Contracts</a></li>
+                        <li id="PaymentEstimates"><a href="@(Url.Action("PaymentEstimates", "Home"))"><span class="icon k-icon k-i-saturation"></span>Payment Estimates</a></li>
+                        <li id="Inspections"><a href="@(Url.Action("Inspections", "Home"))"><i class="icon k-icon k-i-preview"></i>Inspections</a></li>
+                        <li id="PaymentRequests"><a href="@(Url.Action("PaymentRequests", "Home"))"><span class="icon k-icon k-i-inbox"></span>Payment Requests</a></li>
+                        <li id="Closeout"><a href="@(Url.Action("Closeout", "Home"))"><span class="icon k-icon k-i-logout"></span>Closeout</a></li>
+                        <li id="Resources"><a href="@(Url.Action("Resources", "Home"))"><i class="icon k-icon k-i-dictionary-add"></i>Resources</a></li>
                     </ul>
                     <div style="padding-top:70%">
-                        <div id="SocialMedia" style="padding:10%">
-                            <i class="fa fa-facebook-square SocialMediaIcons"></i>
+                        <div id="SocialMedia" style="padding:15%">
+                            <i class="k-icon SocialMediaIcons k-i-facebook-box"></i>
+                            <i class="k-icon SocialMediaIcons k-i-google-plus-box"></i>
+                            <i class="k-icon SocialMediaIcons k-i-linkedin-box"></i>
+                            <i class="k-icon SocialMediaIcons k-i-twitter-box"></i>
+                            <i class="k-icon SocialMediaIcons k-i-youtube-box"></i>
+                            @*<i class="fa fa-facebook-square SocialMediaIcons"></i>
                             <i class="fa fa-google-plus-square SocialMediaIcons"></i>
                             <i class="fa fa-linkedin-square SocialMediaIcons"></i>
                             <i class="fa fa-twitter-square SocialMediaIcons"></i>
-                            <i class="fa fa-youtube-square SocialMediaIcons"></i>
+                            <i class="fa fa-youtube-square SocialMediaIcons"></i>*@
                         </div>
                         <div id="rights">
                             <p style="text-align:center;">
@@ -75,19 +79,19 @@
                         <a href="#"><i id="bar" class="icon fa fa-bars"></i></a>
                         <div class="period-wrapper">
                             <input type="search" placeholder="&#xf002 Search">
-                            &nbsp;&nbsp;
-                            <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="fa fa-cog" style="color:#e2d9d9; font-size:16px"></i></a>
-                            <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
+                            <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="icon k-icon k-i-gear" style="color:#e2d9d9; font-size:16px"></i></a>
+                            <i class="icon k-icon k-i-user" style="color:#e2d9d9; font-size:16px">&nbsp;</i>
+                            <span style="color:black; font-size:12px">Michael Smilth</span>
                         </div>
-                        <p class="AdminLbl">Administrator</p>
+                        <span class="AdminLbl">Administrator</span>
                     </div>
                     <div id="dateFilter1" style="display:none;">
                         <a href="#"><i id="bar1" class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left; padding-top: 15px;"></i></a>
                         <div class="period-wrapper">
                             <input type="search" placeholder="&#xf002 Search">
-                            &nbsp;&nbsp;
-                            <i class="icon fa fa-cog" style="color:#e2d9d9; font-size:16px"></i>
-                            <i class="icon fa fa-user-circle" style="color:#e2d9d9; font-size:16px">&nbsp;<span style="color:black; font-size:12px">Michael Smilth</span></i>
+                            <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="icon k-icon k-i-gear" style="color:#e2d9d9; font-size:16px"></i></a>
+                            <i class="icon k-icon k-i-user" style="color:#e2d9d9; font-size:16px">&nbsp;</i>
+                            <span style="color:black; font-size:12px">Michael Smilth</span>
                         </div>
                         <p class="AdminLbl">Administrator</p>
                     </div>
@@ -105,11 +109,11 @@
                             <span style="text-decoration:underline">Security Statement</span>
                         </td>
                         <td class="pull-right">
-                            <i class="fa fa-facebook-square" style="color:#e2d9d9;  font-size:30px"></i>
-                            <i class="fa fa-google-plus-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-linkedin-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-twitter-square" style="color:#e2d9d9; font-size:30px"></i>
-                            <i class="fa fa-youtube-square" style="color:#e2d9d9; font-size:30px"></i>
+                            <i class="k-icon k-i-facebook-box" style="color:#e2d9d9;  font-size:30px"></i>
+                            <i class="k-icon k-i-google-plus-box" style="color:#e2d9d9; font-size:30px"></i>
+                            <i class="k-icon k-i-linkedin-box" style="color:#e2d9d9; font-size:30px"></i>
+                            <i class="k-icon k-i-twitter-box" style="color:#e2d9d9; font-size:30px"></i>
+                            <i class="k-icon k-i-youtube-box" style="color:#e2d9d9; font-size:30px"></i>
                         </td>
                     </tr>
                 </table>

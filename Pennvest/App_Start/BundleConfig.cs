@@ -27,7 +27,10 @@ namespace Pennvest
                       "~/Content/bootstrap.css",
                        "~/Content/font-awesome.css",
                         "~/Content/font-awesome.min.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/kendo/kendo.mobile.all.min.css",
+                      //"~/Content/kendo/kendo.mobile.nova.min.css",
+                      "~/Content/kendo/kendo.common.min.css"));
 
             //Kendo UI JS bundle
             bundles.Add(new ScriptBundle("~/bundles/kendo").Include(

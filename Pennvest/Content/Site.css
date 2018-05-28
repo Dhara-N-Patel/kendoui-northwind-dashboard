@@ -384,7 +384,8 @@ th, td {
 .SocialMediaIcons {
     color: #e2d9d9;
     padding-left: 8px;
-    font-size: 30px
+    font-size: 30px;
+    border-radius:10px;
 }
 
 #bar {
@@ -450,6 +451,14 @@ th, td {
     color: gray;
 }
 
+.ProjectIcon {
+    color: #e2d9d9;
+    font-size: 18px;
+    padding-left: 80px;
+    margin-right: -35px;
+    margin-bottom: 5px;
+}
+
 .ProjectsMainLbl {
     font-size: 20px;
     color: #6abd2d;
@@ -462,7 +471,7 @@ th, td {
 input[type = "search"] {
     /*border-radius: 5%;*/
     height: 30px;
-    width: 400px;
+    width: 350px;
     font-family: FontAwesome;
     box-shadow: none;
     border: 1px solid #ccc;
@@ -843,7 +852,7 @@ tr.spaceUnder > td {
 .AdminLbl {
     color: #e2d9d9;
     font-size: 12px;
-    padding-right: 2%;
+    /*padding-right: 2%;*/
     padding-left: 70%;
 }
 
