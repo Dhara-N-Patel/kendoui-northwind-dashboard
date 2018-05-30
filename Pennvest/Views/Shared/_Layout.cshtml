@@ -71,7 +71,7 @@
             <div id="main-section" class="col-xs-12 column">
                 <div id="main-section-header" class="row">
                     <div id="dateFilter" class="col-md-12">
-                        <a href="#"><i id="bar" class="icon fa fa-bars"></i></a>
+                        <a href="#"><i id="bar" class="icon k-icon k-i-rows"></i></a>
                         <div class="period-wrapper">
                             <input type="search" placeholder="&#xf002 Search">
                             <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="icon k-icon k-i-gear" style="color:#e2d9d9; font-size:16px"></i></a>
@@ -80,8 +80,9 @@
                         </div>
                         <span class="AdminLbl">Administrator</span>
                     </div>
-                    <div id="dateFilter1" style="display:none;">
-                        <a href="#"><i id="bar1" class="icon fa fa-bars" style="color:#e2d9d9; font-size:30px; float:left; padding-top: 15px;"></i></a>
+                    <div id="dateFilter1"class="hide">
+                        <a href="#"><i id="bar1" class="k-icon k-i-rows"></i></a>
+                            <h1> <img src="~/Content/images/PennvestBluelogo.png" style="width:15%;float:left;" /></h1>
                         <div class="period-wrapper">
                             <input type="search" placeholder="&#xf002 Search">
                             <a href="@(Url.Action("NotificationSettings", "Home"))"><i class="icon k-icon k-i-gear" style="color:#e2d9d9; font-size:16px"></i></a>
@@ -123,16 +124,18 @@
             });
         });
         $('#bar').click(function () {
-            $('#nav-section').hide();
-            $('#dateFilter').hide();
-            $('#dateFilter1').show();
-            $('#footer').show();
+            document.getElementById('nav-section').classList.add('hide');
+            document.getElementById('dateFilter').classList.add('hide');
+            document.getElementById("dateFilter1").classList.remove('hide');
+            document.getElementById("footer").classList.remove('hide');
+            $(".parent").css({ width:'100%' });
         });
         $('#bar1').click(function () {
-            $('#nav-section').show();
-            $('#dateFilter').show();
-            $('#dateFilter1').hide();
-            $('#footer').hide();
+            document.getElementById('nav-section').classList.remove('hide');
+            document.getElementById('dateFilter').classList.remove('hide');
+            document.getElementById("dateFilter1").classList.add('hide');
+            document.getElementById("footer").classList.add('hide');
+            $(".parent").css({ width: '89%' });
         });
 
     </script>

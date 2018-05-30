@@ -358,28 +358,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\NORTHWND.MDF" />
-    <Content Include="App_Data\NORTHWND_log.ldf" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Employees\1-t.png" />
-    <Content Include="Content\Employees\1.png" />
-    <Content Include="Content\Employees\2-t.png" />
-    <Content Include="Content\Employees\2.png" />
-    <Content Include="Content\Employees\3-t.png" />
-    <Content Include="Content\Employees\3.png" />
-    <Content Include="Content\Employees\4-t.png" />
-    <Content Include="Content\Employees\4.png" />
-    <Content Include="Content\Employees\5-t.png" />
-    <Content Include="Content\Employees\5.png" />
-    <Content Include="Content\Employees\6-t.png" />
-    <Content Include="Content\Employees\6.png" />
-    <Content Include="Content\Employees\7-t.png" />
-    <Content Include="Content\Employees\7.png" />
-    <Content Include="Content\Employees\8-t.png" />
-    <Content Include="Content\Employees\8.png" />
-    <Content Include="Content\Employees\9-t.png" />
-    <Content Include="Content\Employees\9.png" />
     <Content Include="Content\fa-brands.css" />
     <Content Include="Content\fa-brands.min.css" />
     <Content Include="Content\fa-regular.css" />
@@ -392,10 +372,8 @@
     <Content Include="Content\fontawesome-all.min.css" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Content\fontawesome.min.css" />
-    <Content Include="Content\images\file-alt.png" />
-    <Content Include="Content\images\file-medical-alt.png" />
+    <Content Include="Content\images\PennvestBluelogo.png" />
     <Content Include="Content\images\Pennvestlogo.png" />
-    <Content Include="Content\images\Warehouse.png" />
     <Content Include="Content\Kendo\Black\editor.png" />
     <Content Include="Content\Kendo\Black\imagebrowser.png" />
     <Content Include="Content\Kendo\Black\indeterminate.gif" />
@@ -3027,7 +3005,9 @@
     <Content Include="Views\Home\Inspections.cshtml" />
     <Content Include="Views\Home\_ContractInfo.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

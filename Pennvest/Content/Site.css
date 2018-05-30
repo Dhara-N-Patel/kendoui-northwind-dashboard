@@ -172,9 +172,6 @@ th, td {
     padding-left: 35px;
     padding-right: 35px;
 }
-
-
-
     #nav-section li a {
         color: white;
         /*text-transform: uppercase;*/
@@ -300,6 +297,12 @@ th, td {
 }
 
 #dateFilter1 {
+    padding-right: 20px;
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+#dateFilter1 {
     text-align: right;
 }
 
@@ -389,11 +392,21 @@ th, td {
 }
 
 #bar {
-    color: #e2d9d9;
+    /*color: #e2d9d9;*/
+    color: #8abacf;
     font-size: 30px;
     float: left;
-    padding-top: 15px;
+    padding-top: 75px;
 }
+
+#bar1 {
+    color: #8abacf;
+    font-size: 30px;
+    float: left;
+    padding-left: 80px;
+    padding-top: 75px;
+}
+
 
 .title {
     font-size: 9px;
@@ -955,6 +968,7 @@ tr.spaceUnder > td {
         padding: 10px;
         padding-right: 4%;
     }
+   
 
     .AdminLbl {
         padding-right: 0px;
