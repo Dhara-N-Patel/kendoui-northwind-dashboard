@@ -464,6 +464,11 @@ th, td {
     color: gray;
 }
 
+.BudgetBtn {
+    border: 1px solid #428bca;
+    border-radius: 7% !important;
+}
+
 .ProjectIcon {
     color: #e2d9d9;
     font-size: 18px;
@@ -1287,6 +1292,7 @@ tr.spaceUnder > td {
     .accordian:hover > span > span {
         color: white !important;
     }
+
 
 .box-col {
     width: 250px;
