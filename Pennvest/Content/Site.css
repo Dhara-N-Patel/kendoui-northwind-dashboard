@@ -17,9 +17,7 @@ body {
 .panelbar{
     background-color:white !important;
 }
-.k-header {
-    background-color: white !important;
-}
+
 
 ol, ul {
     list-style: none;
@@ -328,10 +326,6 @@ th, td {
 #employee-list,
 #EmployeesList {
     background-color: #6abd2d;
-}
-
-.k-block, .k-widget {
-    height: 100% !important;
 }
 
 #Employees-List h3 {
