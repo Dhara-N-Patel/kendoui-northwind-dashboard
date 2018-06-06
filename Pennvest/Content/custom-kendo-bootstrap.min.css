@@ -1,3 +1,19 @@
 ﻿.custom-k-header {
     background-color: white !important;
 }
+.BudgetBtn {
+    border: 1px solid #428bca;
+    border-radius: 7% !important;
+}
+
+.centered {
+    text-align: center !important;
+}
+
+.grayText {
+    color: gray !important;
+}
+
+.noLeftBorder {
+    border-left: none !important;
+}

@@ -163,10 +163,10 @@
                                             <thead class="k-grid-header" role="rowgroup">
                                                 <tr role="row">
                                                     <th></th>
-                                                    <th class="k-header custom-k-header" data-field="LU_CATEGORY_ID" data-index="0" data-title="Cost Category" rowspan="2" scope="col" style="border-left: none;"><span class="k-link"  style="color:gray">Cost Category</span></th>
-                                                    <th class="k-header custom-k-header" colspan="3" data-colspan="3" scope="col" style="text-align:center;"><span class="k-link"  style="color:gray">Total Current Budget</span></th>
+                                                    <th class="k-header custom-k-header noLeftBorder" data-field="LU_CATEGORY_ID" data-index="0" data-title="Cost Category" rowspan="2" scope="col"><span class="k-link grayText">Cost Category</span></th>
+                                                    <th class="k-header custom-k-header centered" colspan="3" data-colspan="3" scope="col"><span class="k-link grayText">Total Current Budget</span></th>
                                                     <th class="k-header custom-k-header" data-aggregates="sum" data-field="APPROVED_DISCREPANCY" data-index="4" data-title="Budget<br />Adjustments" rowspan="2" scope="col">
-                                                        <span class="k-link"  style="color:gray">
+                                                        <span class="k-link grayText">
                                                             Budget Adjustments
                                                         </span>
                                                     </th>
@@ -174,9 +174,9 @@
 
                                                 <tr role="row">
                                                     <th class="k-hierarchy-cell k-header custom-k-header" scope="col">&nbsp;</th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="PENNVEST" data-index="1" data-title="PENNVEST Funding" scope="col"><span class="k-link"  style="color:gray">PENNVEST Funding</span></th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="NON_PENNVEST" data-index="2" data-title="Other Funding Sources" scope="col"><span class="k-link"  style="color:gray">Other Funding Sources</span></th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="TOTAL" data-index="3" data-title="Total Project Funding" scope="col"><span class="k-link"  style="color:gray">Total Project Funding</span></th>
+                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="PENNVEST" data-index="1" data-title="PENNVEST Funding" scope="col"><span class="k-link grayText">PENNVEST Funding</span></th>
+                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="NON_PENNVEST" data-index="2" data-title="Other Funding Sources" scope="col"><span class="k-link grayText">Other Funding Sources</span></th>
+                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="TOTAL" data-index="3" data-title="Total Project Funding" scope="col"><span class="k-link grayText">Total Project Funding</span></th>
                                                 </tr>
 
                                             </thead>
@@ -332,8 +332,8 @@
                                                     <th class="k-header custom-k-header" data-field="DEP_APPROVED" data-index="3" data-title="DEP_ APPROVED" scope="col">
                                                         <center  style="color:gray">DEP Approved</center>
                                                     </th>
-                                                    <th class="k-header custom-k-header" data-field="CHANGE_ORDER_NAME" data-index="4" data-title="Change Order Name" scope="col"><span class="k-link"  style="color:gray">Change Order Name</span></th>
-                                                    <th class="k-header custom-k-header" data-field="DEP_REQUIRED" data-index="5" data-title="DEP Required" scope="col"><span class="k-link"  style="color:gray">DEP Required</span></th>
+                                                    <th class="k-header custom-k-header" data-field="CHANGE_ORDER_NAME" data-index="4" data-title="Change Order Name" scope="col"><span class="k-link grayText">Change Order Name</span></th>
+                                                    <th class="k-header custom-k-header" data-field="DEP_REQUIRED" data-index="5" data-title="DEP Required" scope="col"><span class="k-link grayText">DEP Required</span></th>
                                                     <th class="k-header custom-k-header" data-index="6" scope="col"><span class="k-link">&nbsp;</span></th>
                                                 </tr>
                                             </thead>
@@ -354,17 +354,17 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="icon k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
@@ -378,15 +378,15 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;"><a role="button" class="BudgetBtn btn " href="#" onclick="showVerification(this,&quot;Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
+                                                        <div class="centered"><a role="button" class="BudgetBtn btn " href="#" onclick="showVerification(this,&quot;Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" disabled="disabled">
                                                         </div>
                                                     </td>
@@ -400,15 +400,15 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;Approve&quot;)"><span class="icon k-icon k-i-check-outline"></span>Approve</a>  </div>
+                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;Approve&quot;)"><span class="icon k-icon k-i-check-outline"></span>Approve</a>  </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
@@ -422,17 +422,17 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;DEP Approved&quot;)"><span class="icon k-icon k-i-check-outline"></span>DEP Approved</a>  </div>
+                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;DEP Approved&quot;)"><span class="icon k-icon k-i-check-outline"></span>DEP Approved</a>  </div>
                                                     </td>
                                                     <td role="gridcell">Test 2</td>
                                                     <td role="gridcell">
@@ -444,17 +444,17 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" checked="checked" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">N/A  </div>
+                                                        <div class="centered">N/A  </div>
                                                     </td>
                                                     <td role="gridcell">TEST CHANGE ORDER</td>
                                                     <td role="gridcell">
@@ -466,15 +466,15 @@
                                                     <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
                                                     <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this &quot; Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
+                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this &quot; Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">
+                                                        <div class="centered">
                                                             <input type="checkbox" disabled="disabled">
                                                         </div>
                                                     </td>
                                                     <td role="gridcell">
-                                                        <div style="text-align: center;">N/A  </div>
+                                                        <div class="centered">N/A  </div>
                                                     </td>
                                                     <td role="gridcell">TEST111</td>
                                                     <td role="gridcell">
@@ -503,7 +503,7 @@
             <div class="modal-headers">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
-            <div class="modal-body" style="text-align:center;">
+            <div class="modal-body centered">
                 <table class="col-md-12">
                     <tr>
                         <td class="product-name"> $199,842,329.00</td>
