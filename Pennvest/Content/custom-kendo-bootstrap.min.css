@@ -1,9 +1,29 @@
-﻿.custom-k-header {
+﻿.k-header {
     background-color: white !important;
+    font-weight: normal !important;
 }
-.BudgetBtn {
-    border: 1px solid #428bca;
+.k-grid-delete, .k-grid-Submit, .k-grid-edit {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0px !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    border: 1px solid #428bca !important;
     border-radius: 7% !important;
+    background-color: white !important;
+    color: #428bca !important;
 }
 
 .centered {
@@ -17,3 +37,37 @@
 .noLeftBorder {
     border-left: none !important;
 }
+
+.k-icon {
+    margin-right: 0.917em !important;
+}
+
+/*.btn-primary {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}*/
+
+.k-button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+

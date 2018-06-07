@@ -147,135 +147,131 @@
                             <span class="CostCategoryBlueLbl">
                                 CURRENT BUDGET
                             </span>
-                            <div id="employee-details-wrapper">
-                                <div id="employee-details" class="row">
-                                    <div class="k-widget k-grid k-display-block" id="grdCurrentBudget" data-role="grid">
-                                        <table role="treegrid">
-                                            <colgroup>
-                                                <col class="k-hierarchy-col">
-                                                <col style="width: 225px">
-                                                <col style="width: 80px">
-                                                <col style="width: 80px">
-                                                <col style="width: 80px">
-                                                <col style="width: 80px">
-                                            </colgroup>
+                            <div class="k-widget k-grid k-display-block" id="grdCurrentBudget" data-role="grid">
+                                <table role="treegrid">
+                                    <colgroup>
+                                        <col class="k-hierarchy-col">
+                                        <col style="width: 225px">
+                                        <col style="width: 80px">
+                                        <col style="width: 80px">
+                                        <col style="width: 80px">
+                                        <col style="width: 80px">
+                                    </colgroup>
 
-                                            <thead class="k-grid-header" role="rowgroup">
-                                                <tr role="row">
-                                                    <th></th>
-                                                    <th class="k-header custom-k-header noLeftBorder" data-field="LU_CATEGORY_ID" data-index="0" data-title="Cost Category" rowspan="2" scope="col"><span class="k-link grayText">Cost Category</span></th>
-                                                    <th class="k-header custom-k-header centered" colspan="3" data-colspan="3" scope="col"><span class="k-link grayText">Total Current Budget</span></th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="APPROVED_DISCREPANCY" data-index="4" data-title="Budget<br />Adjustments" rowspan="2" scope="col">
-                                                        <span class="k-link grayText">
-                                                            Budget Adjustments
-                                                        </span>
-                                                    </th>
-                                                </tr>
+                                    <thead class="k-grid-header" role="rowgroup">
+                                        <tr role="row">
+                                            <th></th>
+                                            <th class="k-header  noLeftBorder" data-field="LU_CATEGORY_ID" data-index="0" data-title="Cost Category" rowspan="2" scope="col"><span class="k-link grayText">Cost Category</span></th>
+                                            <th class="k-header  centered" colspan="3" data-colspan="3" scope="col"><span class="k-link grayText">Total Current Budget</span></th>
+                                            <th class="k-header " data-aggregates="sum" data-field="APPROVED_DISCREPANCY" data-index="4" data-title="Budget<br />Adjustments" rowspan="2" scope="col">
+                                                <span class="k-link grayText">
+                                                    Budget Adjustments
+                                                </span>
+                                            </th>
+                                        </tr>
 
-                                                <tr role="row">
-                                                    <th class="k-hierarchy-cell k-header custom-k-header" scope="col">&nbsp;</th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="PENNVEST" data-index="1" data-title="PENNVEST Funding" scope="col"><span class="k-link grayText">PENNVEST Funding</span></th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="NON_PENNVEST" data-index="2" data-title="Other Funding Sources" scope="col"><span class="k-link grayText">Other Funding Sources</span></th>
-                                                    <th class="k-header custom-k-header" data-aggregates="sum" data-field="TOTAL" data-index="3" data-title="Total Project Funding" scope="col"><span class="k-link grayText">Total Project Funding</span></th>
-                                                </tr>
+                                        <tr role="row">
+                                            <th class="k-hierarchy-cell k-header k-header" scope="col">&nbsp;</th>
+                                            <th class="k-header " data-aggregates="sum" data-field="PENNVEST" data-index="1" data-title="PENNVEST Funding" scope="col"><span class="k-link grayText">PENNVEST Funding</span></th>
+                                            <th class="k-header " data-aggregates="sum" data-field="NON_PENNVEST" data-index="2" data-title="Other Funding Sources" scope="col"><span class="k-link grayText">Other Funding Sources</span></th>
+                                            <th class="k-header " data-aggregates="sum" data-field="TOTAL" data-index="3" data-title="Total Project Funding" scope="col"><span class="k-link grayText">Total Project Funding</span></th>
+                                        </tr>
 
-                                            </thead>
+                                    </thead>
 
-                                            <tfoot class="k-grid-footer">
-                                                <tr class="k-footer-template">
-                                                    <td class="k-hierarchy-cell">&nbsp;</td>
-                                                    <td>Totals:</td>
-                                                    <td>$30,426,802.00</td>
-                                                    <td>$15,780.00</td>
-                                                    <td>$30,442,582.00 </td>
-                                                    <td>$15,353,406.00 </td>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody role="rowgroup">
-                                                <tr class="k-master-row" data-uid="9a94a1b1-b53e-4459-9b9b-5e4dcc1b783d" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="" role="gridcell">1. Administrative Costs</td>
-                                                    <td class="" role="gridcell">$462,183.00</td>
-                                                    <td class="" role="gridcell">$7,890.00</td>
-                                                    <td class="" role="gridcell">$470,073.00</td>
-                                                    <td class="" role="gridcell">$462,183.00</td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="dc9b63ab-f5a5-44bd-990b-b2be717a77e0" role="row" >
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td  role="gridcell">2. Legal Fees</td>
-                                                    <td  role="gridcell">$12,345,440.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$12,345,440.00</td>
-                                                    <td  role="gridcell">$12,345,440.00</td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="a2074ad6-abac-4fe4-a653-dd05811f9ebc" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td  role="gridcell">3. Financing / Accounting Charges</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="1448a6b9-b54f-4799-8ea9-c16ffb128c9f" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td  role="gridcell">4. Interest During Construction</td>
-                                                    <td  role="gridcell">$661,123.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$661,123.00</td>
-                                                    <td  role="gridcell">$456,123.00</td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="55296d8c-2e8d-43a6-bbd7-bcacbd737160" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td role="gridcell">5. Architecture/Engineering Fees</td>
-                                                    <td role="gridcell">$1,061,899.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$1,061,899.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="86bf808c-1f72-4992-8315-4ebba34f6dd9" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td role="gridcell">6. Permits</td>
-                                                    <td role="gridcell">$4,560.00</td>
-                                                    <td role="gridcell">$7,890.00</td>
-                                                    <td role="gridcell">$12,450.00</td>
-                                                    <td role="gridcell">$4,560.00</td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="b2195d5b-3396-49f8-bb3b-ad89963afd66" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td  role="gridcell">7. Land</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                    <td  role="gridcell">$0.00</td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="bf514bad-35ec-46c5-9336-5331e28a990a" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td role="gridcell">8. Construction</td>
-                                                    <td role="gridcell">$12,542,329.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$12,542,329.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="7090aee8-ecb1-4c52-9e89-6cb6567cc424" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td role="gridcell">9. Contingency</td>
-                                                    <td role="gridcell">$3,349,268.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$3,349,268.00</td>
-                                                    <td role="gridcell">$2,085,100.00</td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="7459fbfe-1e3b-4906-bc41-53bb7d45e6eb" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td role="gridcell">10. Other</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                    <td role="gridcell">$0.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                                    <tfoot class="k-grid-footer">
+                                        <tr class="k-footer-template">
+                                            <td class="k-hierarchy-cell">&nbsp;</td>
+                                            <td>Totals:</td>
+                                            <td>$30,426,802.00</td>
+                                            <td>$15,780.00</td>
+                                            <td>$30,442,582.00 </td>
+                                            <td>$15,353,406.00 </td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody role="rowgroup">
+                                        <tr class="k-master-row" data-uid="9a94a1b1-b53e-4459-9b9b-5e4dcc1b783d" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td class="" role="gridcell">1. Administrative Costs</td>
+                                            <td class="" role="gridcell">$462,183.00</td>
+                                            <td class="" role="gridcell">$7,890.00</td>
+                                            <td class="" role="gridcell">$470,073.00</td>
+                                            <td class="" role="gridcell">$462,183.00</td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="dc9b63ab-f5a5-44bd-990b-b2be717a77e0" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">2. Legal Fees</td>
+                                            <td role="gridcell">$12,345,440.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$12,345,440.00</td>
+                                            <td role="gridcell">$12,345,440.00</td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="a2074ad6-abac-4fe4-a653-dd05811f9ebc" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">3. Financing / Accounting Charges</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="1448a6b9-b54f-4799-8ea9-c16ffb128c9f" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">4. Interest During Construction</td>
+                                            <td role="gridcell">$661,123.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$661,123.00</td>
+                                            <td role="gridcell">$456,123.00</td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="55296d8c-2e8d-43a6-bbd7-bcacbd737160" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">5. Architecture/Engineering Fees</td>
+                                            <td role="gridcell">$1,061,899.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$1,061,899.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="86bf808c-1f72-4992-8315-4ebba34f6dd9" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">6. Permits</td>
+                                            <td role="gridcell">$4,560.00</td>
+                                            <td role="gridcell">$7,890.00</td>
+                                            <td role="gridcell">$12,450.00</td>
+                                            <td role="gridcell">$4,560.00</td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="b2195d5b-3396-49f8-bb3b-ad89963afd66" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">7. Land</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="bf514bad-35ec-46c5-9336-5331e28a990a" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">8. Construction</td>
+                                            <td role="gridcell">$12,542,329.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$12,542,329.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="7090aee8-ecb1-4c52-9e89-6cb6567cc424" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">9. Contingency</td>
+                                            <td role="gridcell">$3,349,268.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$3,349,268.00</td>
+                                            <td role="gridcell">$2,085,100.00</td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="7459fbfe-1e3b-4906-bc41-53bb7d45e6eb" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td role="gridcell">10. Other</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                            <td role="gridcell">$0.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </li>
                         <li class="CostCategoryBlueLbl accordian">
@@ -304,189 +300,200 @@
                             <span class="CostCategoryBlueLbl">
                                 PAYMENT ESTIMATES
                             </span>
-                            <div id="employee-details-wrapper">
-                                <div id="employee-details" class="row">
-                                    <div class="k-widget k-grid k-display-block k-editable" id="grdChangeOrder" data-role="grid">
-                                        <div class="k-header k-grid-toolbar custom-k-header"><a class="btn btn-primary" href="/ChangeOrder/ChangeOrder_Read?ACTIVE=True&amp;grdChangeOrder-mode=insert"><span class="icon k-icon k-i-add"></span>Enter New Change Order</a></div>
-                                        <table role="treegrid">
-                                            <colgroup>
-                                                <col class="k-hierarchy-col">
-                                                <col>
-                                                <col>
-                                                <col>
-                                                <col>
-                                                <col>
-                                                <col>
-                                                <col>
-                                            </colgroup>
-                                            <thead class="k-grid-header" role="rowgroup">
-                                                <tr role="row">
-                                                    <th class="k-hierarchy-cell k-header custom-k-header" scope="col">&nbsp;</th>
-                                                    <th class="k-header custom-k-header" data-index="0" scope="col"  style="border-left: none;"><span class="k-link">&nbsp;</span></th>
-                                                    <th class="k-header custom-k-header" data-field="SUBMITTED" data-index="1" data-title="SUBMITTED" scope="col">
-                                                        <center  style="color:gray">Submitted</center>
-                                                    </th>
-                                                    <th class="k-header custom-k-header" data-field="APPROVED" data-index="2" data-title="APPROVED" scope="col">
-                                                        <center  style="color:gray">Approved</center>
-                                                    </th>
-                                                    <th class="k-header custom-k-header" data-field="DEP_APPROVED" data-index="3" data-title="DEP_ APPROVED" scope="col">
-                                                        <center  style="color:gray">DEP Approved</center>
-                                                    </th>
-                                                    <th class="k-header custom-k-header" data-field="CHANGE_ORDER_NAME" data-index="4" data-title="Change Order Name" scope="col"><span class="k-link grayText">Change Order Name</span></th>
-                                                    <th class="k-header custom-k-header" data-field="DEP_REQUIRED" data-index="5" data-title="DEP Required" scope="col"><span class="k-link grayText">DEP Required</span></th>
-                                                    <th class="k-header custom-k-header" data-index="6" scope="col"><span class="k-link">&nbsp;</span></th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot class="k-grid-footer">
-                                                <tr class="k-footer-template">
-                                                    <td class="k-hierarchy-cell">&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                    <td>&nbsp;</td>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody role="rowgroup">
-                                                <tr class="k-master-row" data-uid="4e0b347b-830e-46df-a0c3-8753c9212bc9" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="icon k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">Change Order 4044</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" checked="" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell" role="gridcell"></td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="d28e5325-9a9b-402d-8286-cfe48caf12d3" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered"><a role="button" class="BudgetBtn btn " href="#" onclick="showVerification(this,&quot;Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">Construction Change</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" checked="" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-delete" href="#"><span class="icon k-icon k-i-close"></span>Delete</a></td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="49c9e601-6abf-404e-9d84-52f3d4cfddd0" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;Approve&quot;)"><span class="icon k-icon k-i-check-outline"></span>Approve</a>  </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">test</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" checked="" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn  k-grid-delete" href="#"><span class="icon k-icon k-i-close"></span>Delete</a></td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="0f784de0-fbd8-43cc-9f21-8d6d21c417cd" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this,&quot;DEP Approved&quot;)"><span class="icon k-icon k-i-check-outline"></span>DEP Approved</a>  </div>
-                                                    </td>
-                                                    <td role="gridcell">Test 2</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" checked="" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"></td>
-                                                </tr>
-                                                <tr class="k-master-row" data-uid="656dadbf-63c1-47b0-9b35-f8306f89f37c" role="row">
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">N/A  </div>
-                                                    </td>
-                                                    <td role="gridcell">TEST CHANGE ORDER</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell" role="gridcell"></td>
-                                                </tr>
-                                                <tr class="k-alt k-master-row custom-k-header" data-uid="3dd49511-a5c9-40ac-a293-0ccb26fb398a" role="row" >
-                                                    <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn k-grid-edit" href="#"><span class="icon k-icon k-i-track-changes-enable"></span>Edit</a></td>
-                                                    <td role="gridcell">
-                                                        <div class="centered"><a role="button" class="BudgetBtn btn  " href="#" onclick="showVerification(this &quot; Submit&quot;)"><span class="icon k-icon k-i-inbox"></span>Submit</a>  </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">
-                                                            <input type="checkbox" disabled="disabled">
-                                                        </div>
-                                                    </td>
-                                                    <td role="gridcell">
-                                                        <div class="centered">N/A  </div>
-                                                    </td>
-                                                    <td role="gridcell">TEST111</td>
-                                                    <td role="gridcell">
-                                                        <input type="checkbox" disabled="disabled">
-                                                    </td>
-                                                    <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="BudgetBtn btn  k-grid-delete" href="#"><span class="icon k-icon k-i-close"></span>Delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                </div>
+                            <div class="k-widget k-grid k-display-block k-editable" id="grdChangeOrder" data-role="grid">
+                                <div class="k-header k-grid-toolbar"><button class="k-button k-button-icontext k-grid-add" href="/ChangeOrder/ChangeOrder_Read?ACTIVE=True&amp;grdChangeOrder-mode=insert"><span class="k-icon k-i-add"></span>Enter New Change Order</button></div>
+                                <table role="treegrid">
+                                    <colgroup>
+                                        <col class="k-hierarchy-col">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead class="k-grid-header" role="rowgroup">
+                                        <tr role="row">
+                                            <th class="k-hierarchy-cell k-header" scope="col">&nbsp;</th>
+                                            <th class="k-header" data-index="0" scope="col" style="border-left: none;"><span class="k-link">&nbsp;</span></th>
+                                            <th class="k-header" data-field="SUBMITTED" data-index="1" data-title="SUBMITTED" scope="col">
+                                                <center style="color:gray">Submitted</center>
+                                            </th>
+                                            <th class="k-header" data-field="APPROVED" data-index="2" data-title="APPROVED" scope="col">
+                                                <center style="color:gray">Approved</center>
+                                            </th>
+                                            <th class="k-header" data-field="DEP_APPROVED" data-index="3" data-title="DEP_ APPROVED" scope="col">
+                                                <center style="color:gray">DEP Approved</center>
+                                            </th>
+                                            <th class="k-header" data-field="CHANGE_ORDER_NAME" data-index="4" data-title="Change Order Name" scope="col"><span class="k-link grayText">Change Order Name</span></th>
+                                            <th class="k-header" data-field="DEP_REQUIRED" data-index="5" data-title="DEP Required" scope="col"><span class="k-link grayText">DEP Required</span></th>
+                                            <th class="k-header" data-index="6" scope="col"><span class="k-link">&nbsp;</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot class="k-grid-footer">
+                                        <tr class="k-footer-template">
+                                            <td class="k-hierarchy-cell">&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody role="rowgroup">
+                                        <tr class="k-master-row" data-uid="4e0b347b-830e-46df-a0c3-8753c9212bc9" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false">
+                                                <a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a>
+                                            </td>
+                                            <td class="k-command-cell" role="gridcell">
+                                                <a role="button" class="k-button k-button-icontext k-grid-edit" href="#">
+                                                    <span class="k-icon k-i-track-changes-enable"></span>Edit
+                                                </a>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">Change Order 4044</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" checked="" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell" role="gridcell"></td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="d28e5325-9a9b-402d-8286-cfe48caf12d3" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false">
+                                                <a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a>
+                                            </td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell">
+                                                <a role="button" class=" k-button k-button-icontext k-grid-edit" href="#">
+                                                    <span class="k-icon k-i-track-changes-enable"></span>Edit
+                                                </a>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <a role="button" class="k-button k-button-icontext k-grid-Submit" href="#" onclick="showVerification(this,&quot;Submit&quot;)">
+                                                        <span class="k-icon k-i-inbox"></span>Submit
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">Construction Change</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" checked="" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span>Delete</a></td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="49c9e601-6abf-404e-9d84-52f3d4cfddd0" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td class="k-command-cell" role="gridcell"><a role="button" class=" k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-track-changes-enable"></span>Edit</a></td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered"><a role="button" class="k-button k-button-icontext  k-grid-Submit" href="#" onclick="showVerification(this,&quot;Approve&quot;)"><span class="k-icon k-i-check-outline"></span>Approve</a>  </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">test</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" checked="" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span>Delete</a></td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="0f784de0-fbd8-43cc-9f21-8d6d21c417cd" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-track-changes-enable"></span>Edit</a></td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered"><a role="button" class="k-button k-button-icontext  k-grid-Submit" href="#" onclick="showVerification(this,&quot;DEP Approved&quot;)"><span class="k-icon k-i-check-outline"></span>DEP Approved</a>  </div>
+                                            </td>
+                                            <td role="gridcell">Test 2</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" checked="" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell"></td>
+                                        </tr>
+                                        <tr class="k-master-row" data-uid="656dadbf-63c1-47b0-9b35-f8306f89f37c" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td class="k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-track-changes-enable"></span>Edit</a></td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" checked="checked" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">N/A  </div>
+                                            </td>
+                                            <td role="gridcell">TEST CHANGE ORDER</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell" role="gridcell"></td>
+                                        </tr>
+                                        <tr class="k-alt k-master-row k-header" data-uid="3dd49511-a5c9-40ac-a293-0ccb26fb398a" role="row">
+                                            <td class="k-hierarchy-cell" aria-expanded="false"><a class="k-icon k-i-expand" href="#" aria-label="Expand" tabindex="-1"></a></td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-edit" href="#"><span class="k-icon k-i-track-changes-enable"></span>Edit</a></td>
+                                            <td role="gridcell">
+                                                <div class="centered"><a role="button" class="k-button k-button-icontext  k-grid-Submit" href="#" onclick="showVerification(this &quot; Submit&quot;)"><span class="k-icon k-i-inbox"></span>Submit</a>  </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">
+                                                    <input type="checkbox" disabled="disabled">
+                                                </div>
+                                            </td>
+                                            <td role="gridcell">
+                                                <div class="centered">N/A  </div>
+                                            </td>
+                                            <td role="gridcell">TEST111</td>
+                                            <td role="gridcell">
+                                                <input type="checkbox" disabled="disabled">
+                                            </td>
+                                            <td class="k-command-cell k-command-cell" role="gridcell"><a role="button" class="k-button k-button-icontext k-grid-delete" href="#"><span class="k-icon k-i-close"></span>Delete</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </li>
                     </ul>
